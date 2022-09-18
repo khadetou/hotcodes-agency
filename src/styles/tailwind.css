@@ -746,7 +746,7 @@ body {
 }
 .a28 {
   --tw-border-opacity: 1;
-  border-color: rgb(74 108 247 / var(--tw-border-opacity));
+  border-color: rgb(213 54 71 / var(--tw-border-opacity));
 }
 .a1z\[\#e9e9e9\] {
   --tw-border-opacity: 1;
@@ -764,7 +764,7 @@ body {
 }
 .a16 {
   --tw-bg-opacity: 1;
-  background-color: rgb(74 108 247 / var(--tw-bg-opacity));
+  background-color: rgb(213 54 71 / var(--tw-bg-opacity));
 }
 .a_\[\#222C40\] {
   --tw-bg-opacity: 1;
@@ -1087,7 +1087,7 @@ body {
 }
 .aH {
   --tw-text-opacity: 1;
-  color: rgb(74 108 247 / var(--tw-text-opacity));
+  color: rgb(213 54 71 / var(--tw-text-opacity));
 }
 .a1F\[\#d9d9d9\] {
   --tw-text-opacity: 1;
@@ -1244,7 +1244,7 @@ html {
 }
 .menu-scroll.active {
   --tw-text-opacity: 1;
-  color: rgb(74 108 247 / var(--tw-text-opacity));
+  color: rgb(213 54 71 / var(--tw-text-opacity));
 }
 .menu-wrapper {
   display: none;
@@ -1296,7 +1296,7 @@ html {
 }
 .submenu-item a.active {
   --tw-text-opacity: 1;
-  color: rgb(74 108 247 / var(--tw-text-opacity));
+  color: rgb(213 54 71 / var(--tw-text-opacity));
 }
 .a4s .submenu-item a.active {
   --tw-text-opacity: 1;
@@ -1340,10 +1340,10 @@ html {
   align-items: center;
   justify-content: center;
   border-radius: 9999px;
-  background-color: rgb(74 108 247 / var(--tw-bg-opacity));
+  background-color: rgb(213 54 71 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.1;
   --tw-text-opacity: 1;
-  color: rgb(74 108 247 / var(--tw-text-opacity));
+  color: rgb(213 54 71 / var(--tw-text-opacity));
 }
 .tns-controls button:hover {
   --tw-bg-opacity: 1;
@@ -1357,7 +1357,7 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .a4s .tns-controls button:hover {
-  background-color: rgb(74 108 247 / var(--tw-bg-opacity));
+  background-color: rgb(213 54 71 / var(--tw-bg-opacity));
   --tw-bg-opacity: 1;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1381,14 +1381,14 @@ html {
 }
 .hover\:a28:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(74 108 247 / var(--tw-border-opacity));
+  border-color: rgb(213 54 71 / var(--tw-border-opacity));
 }
 .hover\:aZ:hover {
   border-color: transparent;
 }
 .hover\:a16:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(74 108 247 / var(--tw-bg-opacity));
+  background-color: rgb(213 54 71 / var(--tw-bg-opacity));
 }
 .hover\:a19:hover {
   --tw-bg-opacity: 0.9;
@@ -1398,11 +1398,11 @@ html {
 }
 .hover\:aH:hover {
   --tw-text-opacity: 1;
-  color: rgb(74 108 247 / var(--tw-text-opacity));
+  color: rgb(213 54 71 / var(--tw-text-opacity));
 }
 .focus\:a28:focus {
   --tw-border-opacity: 1;
-  border-color: rgb(74 108 247 / var(--tw-border-opacity));
+  border-color: rgb(213 54 71 / var(--tw-border-opacity));
 }
 .aJ:hover .group-hover\:a1d {
   --tw-translate-y: 0px;
@@ -1412,7 +1412,7 @@ html {
 }
 .aJ:hover .group-hover\:a16 {
   --tw-bg-opacity: 1;
-  background-color: rgb(74 108 247 / var(--tw-bg-opacity));
+  background-color: rgb(213 54 71 / var(--tw-bg-opacity));
 }
 .aJ:hover .group-hover\:a3r {
   --tw-bg-opacity: 1;
@@ -1459,7 +1459,7 @@ html {
 }
 .a4s .dark\:a28 {
   --tw-border-opacity: 1;
-  border-color: rgb(74 108 247 / var(--tw-border-opacity));
+  border-color: rgb(213 54 71 / var(--tw-border-opacity));
 }
 .a4s .dark\:a3l {
   --tw-border-opacity: 0.1;
@@ -1508,7 +1508,7 @@ html {
 }
 .a4s .dark\:hover\:a28:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(74 108 247 / var(--tw-border-opacity));
+  border-color: rgb(213 54 71 / var(--tw-border-opacity));
 }
 .a4s .dark\:hover\:a3r:hover {
   --tw-bg-opacity: 1;
@@ -1519,7 +1519,7 @@ html {
 }
 .a4s .dark\:hover\:aH:hover {
   --tw-text-opacity: 1;
-  color: rgb(74 108 247 / var(--tw-text-opacity));
+  color: rgb(213 54 71 / var(--tw-text-opacity));
 }
 .a4s .dark\:focus\:a2v:focus {
   --tw-border-opacity: 1;
@@ -1527,7 +1527,7 @@ html {
 }
 .a4s .aJ:hover .dark\:group-hover\:a16 {
   --tw-bg-opacity: 1;
-  background-color: rgb(74 108 247 / var(--tw-bg-opacity));
+  background-color: rgb(213 54 71 / var(--tw-bg-opacity));
 }
 .a4s .aJ:hover .dark\:group-hover\:a3r {
   --tw-bg-opacity: 1;

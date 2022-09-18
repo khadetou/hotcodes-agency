@@ -5,14 +5,16 @@ import Banner from "@/sections/Home/Banner";
 import Blog from "@/sections/Home/Blog";
 import Cta from "@/sections/Home/Cta";
 import Features from "@/sections/Home/Features";
-import Isotope from "@/sections/Home/Isotope";
 import Portfolio from "@/sections/Home/Portfolio";
 import Pricing from "@/sections/Home/Pricing";
 import Support from "@/sections/Home/Support/index";
 import Team from "@/sections/Home/Team";
 import type { GetServerSideProps, NextPage } from "next";
+import { HiChevronUp } from "react-icons/hi";
+import ScrollToTop from "react-scroll-to-top";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-const Home: NextPage = ({ movies }: any) => {
+const Home: NextPage = () => {
   return (
     <Layout>
       <Banner />
@@ -24,6 +26,11 @@ const Home: NextPage = ({ movies }: any) => {
       <Blog />
       <Support />
       <Cta />
+      <ScrollToTop
+        smooth
+        className="!bg-blue-color"
+        component={<HiChevronUp className="text-white text-2xl mx-auto" />}
+      />
       <Footer />
     </Layout>
   );
@@ -31,14 +38,11 @@ const Home: NextPage = ({ movies }: any) => {
 
 export default Home;
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  const data = await fetch(
-    "https://api.themoviedb.org/3/movie/popular?api_key=3fadeabaaabeb25b421978acfc25a1ef&language=en-US&page=1"
-  );
-  const movies = await data.json();
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
+  const { locale } = ctx;
   return {
     props: {
-      movies,
+      ...(await serverSideTranslations(locale!, ["common", "header"])),
     },
   };
 };

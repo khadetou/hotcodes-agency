@@ -1,6 +1,9 @@
 import { useTheme } from "next-themes";
 import React, { ChangeEvent, FC, useEffect, useState } from "react";
-import Submenu from "./Submenu";
+import Image from "next/image";
+import { useTranslation } from "next-i18next";
+import LangDropdown from "./LangDropdown";
+import { useRouter } from "next/router";
 
 interface HeaderProps {
   className?: string;
@@ -9,6 +12,8 @@ interface HeaderProps {
 
 const Header: FC<HeaderProps> = ({ className, isSticky }) => {
   const { setTheme } = useTheme();
+  const { t } = useTranslation("header");
+  const { locale } = useRouter();
 
   const [toggle, setToggle] = useState(false);
   useEffect(() => {
@@ -28,19 +33,30 @@ const Header: FC<HeaderProps> = ({ className, isSticky }) => {
       className={`py-5  absolute top-0 left-0 w-full ${className && className}`}
     >
       <div className="lg:items-center flex w-full flex-wrap px-5 lg:flex-nowrap lg:px-5 xl:px-10 2xl:px-20">
-        <div className="relative z-[99] max-w-[250px] lg:w-full xl:max-w-[350px]">
-          <a href="index.html" className="inline-block">
-            <img
-              src="/images/logo/logo-dark.svg"
-              alt="logo"
-              className="hidden h-[50px] dark:block"
-            />
-            <img
-              src="/images/logo/logo-light.svg"
-              alt="logo"
-              className="h-[50px] dark:hidden"
-            />
-          </a>
+        <div
+          className={`relative z-[99] max-w-[250px] lg:w-full ${
+            locale === "fr" ? "xl:max-w-[280px]" : "xl:max-w-[350px]"
+          }`}
+        >
+          <div>
+            <span className="hidden dark:block">
+              <Image
+                src="/images/logo/logo-dark.svg"
+                alt="logo"
+                className="hidden dark:block h-[50px]"
+                width={215}
+                height={50}
+              />
+            </span>
+            <span className="dark:hidden">
+              <Image
+                src="/images/logo/logo-light.svg"
+                alt="logo"
+                width={215}
+                height={50}
+              />
+            </span>
+          </div>
         </div>
         <div
           className={`fixed top-0 left-0 z-50 h-screen w-full justify-center bg-white p-5  lg:visible lg:static lg:flex lg:h-auto lg:justify-start lg:bg-transparent lg:p-0 lg:opacity-100 dark:bg-body-bg dark:lg:bg-transparent  ${
@@ -57,7 +73,7 @@ const Header: FC<HeaderProps> = ({ className, isSticky }) => {
                       isSticky ? "lg:py-5 py-5" : "py-7 lg:py-7"
                     }   `}
                   >
-                    Home
+                    {t("home")}
                   </a>
                 </li>
                 <li className="lg:ml-10 mt-5 lg:mt-0">
@@ -67,7 +83,27 @@ const Header: FC<HeaderProps> = ({ className, isSticky }) => {
                       isSticky ? "lg:py-5 py-5" : "py-7 lg:py-7"
                     }  `}
                   >
-                    Features
+                    {t("about")}
+                  </a>
+                </li>
+                <li className="lg:ml-10 mt-5 lg:mt-0">
+                  <a
+                    href="#features"
+                    className={`menu-scroll  hover:!text-blue-color dark:hover:!text-white  inline-flex items-center justify-center text-center font-lexend text-base !text-gray text-body-bg lg:py-7 ${
+                      isSticky ? "lg:py-5 py-5" : "py-7 lg:py-7"
+                    }  `}
+                  >
+                    {t("portfolio")}
+                  </a>
+                </li>
+                <li className="lg:ml-10 mt-5 lg:mt-0">
+                  <a
+                    href="#features"
+                    className={`menu-scroll  hover:!text-blue-color dark:hover:!text-white  inline-flex items-center justify-center text-center font-lexend text-base !text-gray text-body-bg lg:py-7 ${
+                      isSticky ? "lg:py-5 py-5" : "py-7 lg:py-7"
+                    }  `}
+                  >
+                    Services
                   </a>
                 </li>
                 <li className="submenu-item group relative lg:ml-10 mt-5 lg:mt-0">
@@ -77,8 +113,8 @@ const Header: FC<HeaderProps> = ({ className, isSticky }) => {
                       isSticky ? "lg:py-5 py-5" : "py-7 lg:py-7"
                     }`}
                   >
-                    Pages
-                    <span className="pl-3">
+                    {t("blog")}
+                    {/* <span className="pl-3">
                       <svg
                         width="14"
                         height="8"
@@ -87,9 +123,9 @@ const Header: FC<HeaderProps> = ({ className, isSticky }) => {
                       >
                         <path d="M6.54564 5.09128L11.6369 0L13.0913 1.45436L6.54564 8L0 1.45436L1.45436 0L6.54564 5.09128Z" />
                       </svg>
-                    </span>
+                    </span> */}
                   </a>
-                  <Submenu />
+                  {/* <Submenu /> */}
                 </li>
                 <li className="lg:ml-10 mt-5 lg:mt-0">
                   <a
@@ -98,8 +134,11 @@ const Header: FC<HeaderProps> = ({ className, isSticky }) => {
                       isSticky ? "lg:py-5 py-5" : "py-7 lg:py-7"
                     }`}
                   >
-                    Support
+                    {t("contact")}
                   </a>
+                </li>
+                <li className="lg:ml-10 mt-5 lg:mt-0">
+                  <LangDropdown />
                 </li>
               </ul>
             </nav>
@@ -109,13 +148,13 @@ const Header: FC<HeaderProps> = ({ className, isSticky }) => {
               href="signup.html"
               className="whitespace-nowrap w-full rounded bg-blue-color py-3 text-center font-lexend text-white lg:w-auto px-6"
             >
-              Sign In
+              {t("signin")}
             </a>
             <a
               href="signup.html"
               className=" w-full whitespace-nowrap rounded bg-blue-dark py-3 px-6 text-center font-lexend text-white lg:w-auto ml-5"
             >
-              Sign Up
+              {t("signup")}
             </a>
           </div>
         </div>
