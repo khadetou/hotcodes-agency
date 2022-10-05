@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { mapImageResources } from "../../../lib/cloudinary";
-import Image from "next/image";
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage, responsive } from "@cloudinary/react";
 import Header from "@/components/Header/Header";

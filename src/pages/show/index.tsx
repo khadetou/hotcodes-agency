@@ -38,7 +38,11 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 
   return {
     props: {
-      ...(await serverSideTranslations(locale!, ["common", "header"])),
+      ...(await serverSideTranslations(locale!, [
+        "common",
+        "header",
+        "footer",
+      ])),
       images,
       next_cursor: next_cursor || false,
       folders,
