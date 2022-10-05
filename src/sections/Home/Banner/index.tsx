@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import ReactWow from "react-wow";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
+import { useMediaQuery } from "react-responsive";
 
 const Banner = () => {
   const { t } = useTranslation("common");
+  const isDesktopOrTablet = useMediaQuery({ minWidth: 540 });
+  const [link, setLink] = useState(
+    "https://web.whatsapp.com/send?phone=786004564&text"
+  );
+
+  useEffect(() => {
+    if (isDesktopOrTablet) {
+      setLink("https://web.whatsapp.com/send?phone=786004564&text");
+    } else {
+      setLink(
+        "https://api.whatsapp.com/send/?phone=+221786004564&text&app_absent=0"
+      );
+    }
+  }, [isDesktopOrTablet]);
 
   return (
     <section
@@ -45,7 +60,9 @@ const Banner = () => {
               <ReactWow animation="fadeInUp" duration="0.5s">
                 <div className=" a5 a6 a9 am lg:as">
                   <a
-                    href="#features"
+                    href={link}
+                    target="_blank"
+                    rel="noreferrer"
                     className="aD a9 aS a16 a1N[10px] a18 aE aF aI hover:a19 md:a1N[14px] md:aU"
                   >
                     {t("banner.button")}
@@ -102,7 +119,7 @@ const Banner = () => {
                     width={350}
                     height={420}
                   />
-                  <div className="a1 a3j a3k a2D a2a a4 aT a28 a3l a16 a3b a3m[6px] dark:a2v dark:a3l dark:an dark:a3c"></div>
+                  <div className="a1 a3j a3k a2D a2a a4 aT a28 a3l a16 a3b a3m[6px] dark:border-white dark:border-opacity-10 dark:bg-white dark:bg-opacity-10"></div>
                 </div>
                 <div className="a1 a3 a10">
                   <svg

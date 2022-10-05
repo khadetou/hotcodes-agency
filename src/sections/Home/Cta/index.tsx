@@ -1,8 +1,10 @@
 import React from "react";
+import { useTranslation } from "next-i18next";
 
 const Cta = () => {
+  const { t } = useTranslation("common");
   return (
-    <section id="cta" className="a1P sm:a1Q lg:a1u[130px]">
+    <section id="contact" className="a1P sm:a1Q lg:a1u[130px]">
       <div className="a1v xl:a1w">
         <div
           className="wow fadeInUp ac a2T a2x a2y a1N[60px] aa a3U dark:a3V sm:a33[70px]"
@@ -37,9 +39,9 @@ const Cta = () => {
                   width="1215"
                   height="1278"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -59,8 +61,8 @@ const Cta = () => {
                   y2="628.947"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#ABBCFF" />
-                  <stop offset="0.859375" stop-color="#4A6CF7" />
+                  <stop stopColor="#ABBCFF" />
+                  <stop offset="0.859375" stopColor="#4A6CF7" />
                 </linearGradient>
               </defs>
             </svg>
@@ -69,20 +71,15 @@ const Cta = () => {
             <div className="a4 a1v lg:a1W/3">
               <div className="a1B a1M ae[550px] az lg:a3a lg:a2g lg:aW">
                 <h2 className="a2W aE a2Z a1G a2E a1t dark:text-white sm:a1F[38px]">
-                  Looking for a collaboration? Get Started Today!
+                  {t("cta.title")}
                 </h2>
-                <p className="aF aG">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
+                <p className="aF aG">{t("cta.text")}</p>
               </div>
             </div>
             <div className="a4 a1v lg:a1S/3">
               <div className="az lg:a2j">
-                <a
-                  href="javascript:void(0)"
-                  className="aD a9 aS a16 a1N[14px] aU aE aF aI hover:a19"
-                >
-                  Get Started Now
+                <a className="aD a9 aS a16 a1N[14px] aU aE aF aI hover:a19">
+                  {t("cta.button")}
                 </a>
               </div>
             </div>

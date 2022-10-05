@@ -1,5 +1,6 @@
 import React from "react";
 import ReactWOW from "react-wow";
+import Image from "next/image";
 
 const Blog = () => {
   return (
@@ -25,11 +26,11 @@ const Blog = () => {
                 <div className=" a1M">
                   <div className="ac a1E a2T aS">
                     <a className="text-white">
-                      <img
+                      {/* <img
                         src="./images/blog/image-1.jpg"
                         alt="blog-image"
                         className="a4"
-                      />
+                      /> */}
                     </a>
                     <span className="a1 a2U a2V aS a16 a1N[6px] a1v aE a1O a1K text-white">
                       Online Business
@@ -81,11 +82,11 @@ const Blog = () => {
                 <div className=" a1M">
                   <div className="ac a1E a2T aS">
                     <a href="javascript:void(0)" className="text-white">
-                      <img
-                        src="./images/blog/image-2.jpg"
+                      {/* <img
+                       src="./images/blog/image-2.jpg"
                         alt="blog-image"
                         className="a4"
-                      />
+                      />  */}
                     </a>
                     <span className="a1 a2U a2V aS a16 a1N[6px] a1v aE a1O a1K text-white">
                       Ui/Ux Design
@@ -137,11 +138,11 @@ const Blog = () => {
                 <div className="a1M">
                   <div className="ac a1E a2T aS">
                     <a href="#" className="text-white">
-                      <img
+                      {/* <img
                         src="./images/blog/image-3.jpg"
                         alt="blog-image"
                         className="a4"
-                      />
+                      /> */}
                     </a>
                     <span className="a1 a2U a2V aS a16 a1N[6px] a1v aE a1O a1K text-white">
                       Web Development

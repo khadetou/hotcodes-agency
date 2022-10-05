@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import arrayShuffle from "array-shuffle";
 import Link from "next/link";
-import { useTranslation } from "next-i18next";
 
 interface ShowCaseProps {
   filter: never[];
@@ -22,14 +21,9 @@ const ShowCase: FC<ShowCaseProps> = ({
       image.title.includes("shot")
     );
     let shuffled: any = arrayShuffle(filtered);
-    let sliced = shuffled;
-    if (filtered.length >= 7) {
-      sliced = shuffled.slice(0, 6);
-    }
-    setFilter(sliced);
-  }, [images, activate]);
 
-  const { t } = useTranslation("common");
+    setFilter(shuffled);
+  }, [images, activate]);
 
   return (
     <motion.div
@@ -53,15 +47,15 @@ const ShowCase: FC<ShowCaseProps> = ({
                 <div className="">
                   <h1 className="font-bold text-2xl my-1 dark:text-white capitalize">
                     {titles[titles.length - 2].includes("page")
-                      ? t("portfolio.categoryCard.title1")
+                      ? "Business Website"
                       : titles[titles.length - 2]}
                   </h1>
                 </div>
                 <div className="mb-5 font-medium">
                   <p className="text-base dark:text-white ">
                     {titles[titles.length - 2].includes("page")
-                      ? t("portfolio.categoryCard.text1")
-                      : t("portfolio.categoryCard.title2")}
+                      ? "Business webisite Template"
+                      : "Multipurpose eCommerce Template"}
                   </p>
                 </div>
               </div>
@@ -70,13 +64,13 @@ const ShowCase: FC<ShowCaseProps> = ({
                   <div className="a3O a1z[#e9e9e9] a3P a3Q sm:a2X lg:a3Q xl:a2X">
                     <h3 className="font-heading aF a1K aI sm:a2Z lg:aF xl:a2Z capitalize">
                       {titles[titles.length - 2].includes("page")
-                        ? t("portfolio.categoryCard.title1")
+                        ? "Business Website"
                         : titles[titles.length - 2]}
                     </h3>
                     <p className="a1O a1F[#d9d9d9] sm:aF lg:a1O xl:aF">
                       {titles[titles.length - 2].includes("page")
-                        ? t("portfolio.categoryCard.title1")
-                        : t("portfolio.categoryCard.text2")}
+                        ? "Website for your business"
+                        : "Get your online store!"}
                     </p>
                   </div>
                   <div className="a3R sm:a25 lg:a3R xl:a25">

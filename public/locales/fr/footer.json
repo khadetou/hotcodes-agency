@@ -1,0 +1,33 @@
+{
+  "textlogo": "Hotcodes, la société qui vous donne tous les codes et accès dont vous avez besoin, avec l’intention de taking the lead when it comes to it.",
+  "company": {
+    "title": "Entreprise",
+    "page1": "Accueil",
+    "page2": "Produits",
+    "page3": "Carrières",
+    "page4": "Tarif"
+  },
+  "support": {
+    "title": "Aide",
+    "page1": "Entreprise",
+    "page2": "Presse",
+    "page3": "Notre Blog",
+    "page4": "Nous Contacter"
+  },
+  "getintouch": {
+    "title": "Contactez-nous",
+    "text1": "Service à la clientèle sans frais",
+    "text2": "Besoin de soutien en direct?"
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "text": "Abonnez-vous pour recevoir les prochaines mises à jour",
+    "email": " Address Mail"
+  },
+  "buttom": {
+    "lang": "Françias",
+    "privacy": "Politique de Confidentialité",
+    "support": "Aide",
+    "rights": "hotcodesagency@2022 Startup. Tous droits réservés"
+  }
+}

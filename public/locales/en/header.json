@@ -1,10 +1,11 @@
 {
-    "home":"Home",
-    "about":"About Us",
-    "portfolio":"Portfolio",
-    "services":"Services",
-    "blog":"Blog",
-    "contact": "Contact Us",
-    "signup":"Sign Up",
-    "signin":"Sign In"
+  "home": "Home",
+  "about": "About Us",
+  "portfolio": "Portfolio",
+  "pricing": "Pricing",
+  "services": "Services",
+  "team": "Team",
+  "contact": "Contact Us",
+  "signup": "Sign Up",
+  "signin": "Sign In"
 }

@@ -5,8 +5,144 @@
       "text": "Solutions Digital pour votre",
       "list": ["Saas", "Agence", "Startup", "Business"]
     },
-    "text": "Hotcodes est une société de développement web qui fournit une technologie de pointe pour faire croître votre entreprise. Nous avons une équipe de développeurs talentueux, de designers et de spécialistes du marketing numérique qui vous aideront à devenir meilleurs avec nos services extraordinaires.",
+    "text": "Hotcodes est une société de développement web qui fournit une technologie de pointe afin de faire croître votre business. Nous avons une équipe de développeurs talentueux, de designers et de spécialistes du marketing numérique qui vous aideront à devenir meilleurs avec nos services extraordinaires.",
     "button": "Commencer",
     "video": "Regarder la video"
+  },
+  "services": {
+    "title": "Nos services de base uniques et impressionnantes",
+    "text": "Hotcodes fournit les meilleurs services qui pourraient répondre à vos besoins. Notre équipe travaille continuellement pour s’assurer que vous êtes satisfait de nos services. Hotcodes est la plate-forme leader pour l’industrie du tech, et nous visons à fournir les meilleurs produits et services pour nos clients.",
+    "marketing": {
+      "title": "Marketing Digital",
+      "text": "Nos services de marketing numérique vous permettront de trouver votre entreprise dans les recherches, de stimuler les pistes et les ventes et de vous garder en tête de la concurrence."
+    },
+    "quality": {
+      "title": "Design de haute qualité",
+      "text": "Vous ne pouvez pas vous tromper avec HotCodes. Nous faisons un design de haute qualité pour votre entreprise. Ne nous croyez pas sur parole — regardez simplement notre incroyable portfolio de templates."
+    },
+    "webdev": {
+      "title": "Development Web",
+      "text": "La conception adaptative du Web est essentielle. Nous nous assurons que chaque projet est réalisé correctement et qu’il respecte les normes du monde du front-end."
+    },
+    "optimization": {
+      "title": "Optimisation de la vitesse",
+      "text": "Nous optimisons les sites web et les accélérons. Nous fournissons des pages hyper-optimisées qui se chargent plus rapidement que le HTML original. Nous utilisons nextjs et Nuxt, qui offrent des sites Web rapides, performants et stables avec chargement à chaud ou des charges de contenu défini par l’utilisateur options maintenant disponibles pour vous d’utiliser!"
+    },
+    "custom": {
+      "title": "Applications entièrement personnalisables",
+      "text": "Nous créons des applications entièrement personnalisables qui ont un bel aspect, sont faciles à utiliser et aident vos clients à obtenir ce dont ils ont besoin."
+    },
+    "updates": {
+      "title": "Mises à Jour Régulières",
+      "text": "Hotcodes est une entreprise de conception et de développement Web à service complet qui travaille avec les petites entreprises, les entrepreneurs et les professionnels pour aider à construire leurs sites. Nous maintenons votre site Web existant, offrons une formation continue sur les pratiques exemplaires actuelles du site Web et mettons votre site à jour régulièrement."
+    }
+  },
+  "about": {
+    "title": "A Propos",
+    "subtitle": "Connaître tous les détails de notre entreprise",
+    "text": "Notre objectif est de construire des entreprises à croissance rapide en adoptant les tendances du marché et en fournissant des services de haute qualité dans un marché hautement compétitif.",
+    "aboutus": {
+      "title": "Who we are",
+      "text": {
+        "title": "Hotcodes est un groupe de développeurs, concepteurs et spécialistes du marketing",
+        "body": " qui ont pour but de conquérir les plus grands marchés internationaux. Nous sommes passionnés par le sujet de la technologie et notre objectif est de créer des entreprises à croissance rapide."
+      }
+    },
+    "mission": {
+      "title": "Notre Mission",
+      "text": {
+        "title": "Hotcodes est une société de services",
+        "body": "Nous croyons que les obstacles qui ont empêché les petits investisseurs d’entrer sur les marchés financiers deviennent rapidement désuets. Nous envisageons un monde où l’on peut facilement investir dans des entreprises de licorne, ou participer aux offres publiques initiales de grandes entreprises, avec peu ou pas de risque personnalisé ou financier."
+      }
+    },
+    "vision": {
+      "title": "Notre Vision",
+      "text": {
+        "title": "Nous sommes une équipe de jeunes hommes qui partagent la même vision :",
+        "body": "Nous sommes une équipe jeune, ambitieuse et dynamique d’hommes qui se sont réunis pour réaliser nos rêves et visions respectives. Nous partageons la même vision de révolutionner la valeur marchande de l’Afrique et de créer de la richesse pour l'afrique en bâtissant une Afrique économiquement forte et prospère."
+      }
+    }
+  },
+  "team": {
+    "title": "NOTRE EQUIPE",
+    "subtitle": "Rencontrez notre équipe créative dévouée",
+    "text": "Nous sommes une équipe de développeurs professionnels qui sont impatients de travailler sur votre prochain projet d'application mobile ou web. Notre équipe créera une application qui résout votre problème, que ce soit un site web ou une application."
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Découvrez nos dernières études de cas",
+    "text": "Vous pouvez commencer à construire votre nouveau portfolio de travail avec l'un des projets ou des conceptions que nous avons dans notre portfolio.",
+    "button": "Voir Plus de Modèles",
+    "categorybtn": {
+      "button1": "Tout",
+      "button2": "Ecommerce",
+      "button3": "Sites professionnels"
+    },
+    "categoryCard": {
+      "title1": "Site professionnel",
+      "text1": "Les meilleurs modèles pour votre entreprise",
+      "title2": "Les meilleurs modèles pour votre commerce en ligne",
+      "text2": "N'attendez plus!"
+    }
+  },
+  "pricing": {
+    "title": "Plans tarifaires",
+    "subtitle": "Prix abordable avec des plans simples",
+    "text": "Hotcodes offre des prix très abordable que vous ne trouverez nulle part ailleurs, offrent des plans tarifaires abordables pour s’adapter à votre budget. En outre, nous avons une variété d’options de paiement telles que les plans de paiement, les paiements mensuels et d’autres options de paiement en cours.",
+    "propsitiotitle": "Recherche d’une solution d’entreprise? ",
+    "propositiontext": "Contactez notre équipe pour obtenir un devis.",
+    "button": "Rejoignez ce plan",
+    "pricingplan": {
+      "title1": "Forfait de Base",
+      "title2": "Forfait Standard",
+      "title3": "Forfait Premium",
+      "subtitle1": "Le plan le plus basique",
+      "subtitle2": "Le plan le plus populaire",
+      "subtitle3": "Le programme le plus avantageux",
+      "pricetext": "Prix très abordable que vous ne trouverez nulle part ailleurs.",
+      "plan1": [
+        "Publication hebdomadaire sur facebook.",
+        "Publication hebdomadaire sur Instagram.",
+        "Design d'infographie"
+      ],
+      "plan2": [
+        "Publication hebdomadaire sur facebook.",
+        "Publication hebdomadaire sur Instagram et Twitter.",
+        "Design d'infographie.",
+        "Rédaction d’articles de blogue"
+      ],
+      "plan3": [
+        "Publication hebdomadaire sur les médias sociaux.",
+        "Rédaction d'articles de blogue.",
+        "Facebook/instagram ads"
+      ]
+    }
+  },
+  "contactus": {
+    "title": "support",
+    "subtitle": "Besoin d’aide? dites bonjour",
+    "text": "N’hésitez pas à nous contacter pour toute aide dont vous avez besoin. Nous fournissons un support client 24/7 pour nos clients",
+    "email": "e-mail&#160;protégé",
+    "mail": "Adresse E-mail",
+    "phone": "Numéro de Téléphone",
+    "location": "Lieu Officiel",
+    "form": {
+      "name": "Votre Nom",
+      "nameplaceholder": "Nom Complet",
+      "mail": "Address Email",
+      "phone": "Téléphone (optionnel)",
+      "phoneplaceholder": "Numéro de Téléphone",
+      "subject": "Objet",
+      "subjectplaceholder": "Saisissez l'objet",
+      "message": "Message",
+      "messageplaceholder": "Saisissez le Message",
+      "privacy": "J’ai lu les termes du Service et j’accepte la Politique de confidentialité",
+      "button": "Envoyer le message"
+    }
+  },
+  "cta": {
+    "title": "Vous cherchez une collaboration? Commencez dès aujourd’hui!",
+    "text": "Nous travaillons fort pour innover dans notre façon de faire des affaires. Joignez-vous à notre communauté de collaboration et faites partie de l’avenir de la technologie.",
+    "button": "Commencer Maintenant"
   }
 }

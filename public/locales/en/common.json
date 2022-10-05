@@ -7,6 +7,142 @@
     },
     "text": "Hotcodes is a web development company that provides cutting edge technology to make your business grow. We have a team of talented developers, designers and digital marketers who will help you to become better with our extraordinary services.",
     "button": "Get Started",
-    "video": "How it Work"
+    "video": "Watch the Video"
+  },
+  "services": {
+    "title": "Our Unique & Awesome Core Services",
+    "text": "Hotcodes provides the best services that might suit your needs. Our team works continuously to ensure that you are satisfied with our services. Hotcodes is the leading platform for the tech industry, and we aim to provide the best products and services for our clients.",
+    "marketing": {
+      "title": "Digital Marketing",
+      "text": "HotCodes’ Digital Marketing Services will get your business found in searches, drive leads and sales, and keep you ahead of the competition"
+    },
+    "quality": {
+      "title": "High-quality Design",
+      "text": "You can't go wrong with HotCodes. We make high quality design for your business. Don't take our word for it--just check out our amazing portfolio of templates."
+    },
+    "webdev": {
+      "title": "Web Development",
+      "text": "Responsive Web design is key. Here at HotCodes, we ensure that every project is done right and meet the standards in the front-end world."
+    },
+    "optimization": {
+      "title": "Speed Optimization",
+      "text": "We optimizes fast websites and speeds them up. We provide hyper-optimized pages that load faster than the original HTML. We use nextjs and Nuxt, which deliver fast, performant, stable websites with hotloading or loads of content user-defined options now available for you to use!"
+    },
+    "custom": {
+      "title": "Fully Customizable Apps",
+      "text": "We create fully customizable apps that look and feel great, are easy to use, and help your customers get what they need."
+    },
+    "updates": {
+      "title": "Regular Updates",
+      "text": "Hotcodes is a full-service web design and development company that works with small businesses, entrepreneurs, and professionals to help build their sites. We maintain your existing website, provide ongoing training on current website best practices, and update your site regularly."
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Know all details about our company",
+    "text": "We aim to build a fast growing companies by embracing the trends in the market and delivering high quality services in a highly competitive market.",
+    "aboutus": {
+      "title": "Who we are",
+      "text": {
+        "title": "Hotcodes is a group of developers, designers and marketers",
+        "body": "with the aim of conquering the largest international markets. We are passionate about the subject of technology and our goal is to create fast growing companies."
+      }
+    },
+    "mission": {
+      "title": "Our mission",
+      "text": {
+        "title": "Hotcodes is a service company and also a cradle of IT startups.",
+        "body": "We believe that the barriers that have prevented smaller investors from entering into the capital markets are quickly becoming obsolete. We envision a world where one can easily invest in unicorn companies, or participate in the initial public offerings of large corporations, with little to no personalized or financial risk."
+      }
+    },
+    "vision": {
+      "title": "Our Vision",
+      "text": {
+        "title": "We are a team of young men who share the same vision:",
+        "body": "We are a young, ambitious and dynamic team of men who got together to fulfil our respective dreams and visions. We share the same vision of revolutionizing Africa's market value and to create wealth for Africans by building an economically strong and prosperous Africa."
+      }
+    }
+  },
+  "team": {
+    "title": "OUR TEAM",
+    "subtitle": "Meet With Our Creative Dedicated Team",
+    "text": "We are a professional team of developers that are looking to build new and exciting applications. Our goal is to create an application that solves your problem, be it a website or an app. Our team will be able to provide you with all the resources you need to get started on your project so that your vision can be realized."
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Explore Our Latest Case Studies",
+    "text": "You can start building your new work portfolio with any of the projects or designs we have in our portfolio.",
+    "button": "See More Templates",
+    "categorybtn": {
+      "button1": "All",
+      "button2": "Ecommerce",
+      "button3": "Business websites"
+    },
+    "categoryCard": {
+      "title1": "Business website",
+      "text1": "Best templates for your business",
+      "title2": "Best template for your ecommerce",
+      "text2": "Get your online store now!"
+    }
+  },
+  "pricing": {
+    "title": "Pricing plans",
+    "subtitle": "Affordable pricing with simple plans",
+    "text": "hotcodes offer affordable pricing plans to fit your budget. In addition, we have a variety of payment options such as payment plans, monthly payments and other on-going payment options.",
+    "button": "Join this plan",
+    "propsitiotitle": "Looking for a company solution? ",
+    "propositiontext": "Contact our team to get a quote.",
+    "pricingplan": {
+      "title1": "Basic",
+      "title2": "Standard",
+      "title3": "Premium",
+      "subtitle1": "The most basic plan",
+      "subtitle2": "The most popular plan",
+      "subtitle3": "The most premium plan",
+      "pricetext": "Very affordable pricing that will not find nowhere else.",
+      "plan1": [
+        "Weekly publication on facebook.",
+        "Weekly Instagram post.",
+        "Infographic design"
+      ],
+      "plan2": [
+        "Weekly publication on facebook.",
+        "Weekly Instagram, twitter post.",
+        "Infographic design.",
+        "Blog article redaction"
+      ],
+      "plan3": [
+        "Weekly publication on social media.",
+        "Blog article redaction.",
+        "Facebook/instagram ads"
+      ]
+    }
+  },
+  "contactus": {
+    "title": "support",
+    "subtitle": "Need any help say hello",
+    "text": "Feel free to contact us for any help you need. We provide 24/7 customer support for our customers",
+    "email": "email protected",
+    "mail": "Email Address",
+    "phone": "Phone Number",
+    "location": "Official Location",
+    "form": {
+      "name": "Your name",
+      "nameplaceholder": "Full Name",
+      "mail": "Email Address",
+      "phone": "Phone (Optional)",
+      "phoneplaceholder": "Phone Number",
+      "subject": "Subject",
+      "subjectplaceholder": "Type Subject",
+      "message": "Message",
+      "messageplaceholder": "Type Message",
+      "privacy": "I have read the terms of the Service and accept Privacy Policy",
+      "button": "Send Message"
+    }
+  },
+  "cta": {
+    "title": "Looking for a collaboration ? Get Started today!",
+    "text": "We're working hard on innovating the way we do business. Join our collaborative community and be a part of the future of technology.",
+    "button": "Get Started Now"
   }
 }

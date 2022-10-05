@@ -1,5 +1,8 @@
 import Footer from "@/components/Footer";
 import Layout from "@/components/Layout";
+import { GetStaticProps } from "next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Link from "next/link";
 import React from "react";
 import ReactWOW from "react-wow";
 const NotFound = () => {
@@ -15,18 +18,17 @@ const NotFound = () => {
                   404
                 </h1>
                 <h2 className="a1I aE a1J a1K a1t dark:text-white md:a1L">
-                  Sorry, the page can't be found
+                  Sorry, the page can&apos;t be found
                 </h2>
                 <p className="a1B a1M ae[515px] aF aG">
                   The page you were looking for appears to have been moved,
                   deleted or does not exist.
                 </p>
-                <a
-                  href="index.html"
-                  className="aD a9 am aS a16 a1N[14px] aU a1O a1G aI"
-                >
-                  Back to Home
-                </a>
+                <Link href="/">
+                  <a className="aD a9 am aS a16 a1N[14px] aU a1O a1G aI">
+                    Back to Home
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -38,3 +40,15 @@ const NotFound = () => {
 };
 
 export default NotFound;
+export const getStaticProps: GetStaticProps = async (ctx) => {
+  const { locale } = ctx;
+  return {
+    props: {
+      ...(await serverSideTranslations(locale!, [
+        "common",
+        "header",
+        "footer",
+      ])),
+    },
+  };
+};

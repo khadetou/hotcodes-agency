@@ -1,6 +1,10 @@
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { useTranslation } from "next-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation("footer");
   return (
     <footer
       className="wow fadeInUp a1P sm:a1Q lg:a1u[130px]"
@@ -10,21 +14,28 @@ const Footer = () => {
         <div className="a1R a5 a6">
           <div className="a4 a1v sm:a1S/2 md:a1p/12 lg:a1T/12 xl:a1T/12">
             <div className="a1U ae[330px]">
-              <a href="index.html" className="a1V af">
-                <img
-                  src="/images/logo/logo-dark.svg"
-                  alt="logo"
-                  className="hidden ah[50px] dark:block"
-                />
-                <img
-                  src="/images/logo/logo-light.svg"
-                  alt="logo"
-                  className="ah[50px] dark:hidden"
-                />
-              </a>
-              <p className="a1M aF aG">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
+              <Link href="/">
+                <button>
+                  <span className="hidden dark:block">
+                    <Image
+                      src="/images/logo/logo-dark.svg"
+                      alt="logo"
+                      className="hidden dark:block h-[50px]"
+                      width={215}
+                      height={50}
+                    />
+                  </span>
+                  <span className="dark:hidden">
+                    <Image
+                      src="/images/logo/logo-light.svg"
+                      alt="logo"
+                      width={215}
+                      height={50}
+                    />
+                  </span>
+                </button>
+              </Link>
+              <p className="a1M aF aG">{t("textlogo")}</p>
               <div className="a5 a9 a12">
                 <a
                   href="#"
@@ -87,21 +98,23 @@ const Footer = () => {
           </div>
           <div className="a1S/2 a1v md:a1T/12 lg:a1T/12 xl:a1W/12">
             <div className="a1U">
-              <h3 className="a1X aE a1Y a1K a1t dark:aI">Company</h3>
+              <h3 className="a1X aE a1Y a1K a1t dark:aI">
+                {t("company.title")}
+              </h3>
               <ul className="a1Z">
                 <li>
                   <a href="#" className="aE aF aG hover:aH dark:hover:aI">
-                    Home
+                    {t("company.page1")}
                   </a>
                 </li>
                 <li>
                   <a href="#" className="aE aF aG hover:aH dark:hover:aI">
-                    Product
+                    {t("company.page2")}
                   </a>
                 </li>
                 <li>
                   <a href="#" className="aE aF aG hover:aH dark:hover:aI">
-                    Careers
+                    {t("company.page3")}
                     <span className="a1_ aS a16 a20 a21 aE a22 aI">
                       {" "}
                       Hiring{" "}
@@ -110,7 +123,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a href="#" className="aE aF aG hover:aH dark:hover:aI">
-                    Pricing
+                    {t("company.page4")}
                   </a>
                 </li>
               </ul>
@@ -118,26 +131,28 @@ const Footer = () => {
           </div>
           <div className="a1S/2 a1v md:a1T/12 lg:a1T/12 xl:a1W/12">
             <div className="a1U">
-              <h3 className="a1X aE a1Y a1K a1t dark:aI">Support</h3>
+              <h3 className="a1X aE a1Y a1K a1t dark:aI">
+                {t("support.title")}
+              </h3>
               <ul className="a1Z">
                 <li>
                   <a href="#" className="aE aF aG hover:aH dark:hover:aI">
-                    Company
+                    {t("support.page1")}
                   </a>
                 </li>
                 <li>
                   <a href="#" className="aE aF aG hover:aH dark:hover:aI">
-                    Press media
+                    {t("support.page2")}
                   </a>
                 </li>
                 <li>
                   <a href="#" className="aE aF aG hover:aH dark:hover:aI">
-                    Our Blog
+                    {t("support.page3")}
                   </a>
                 </li>
                 <li>
                   <a href="#" className="aE aF aG hover:aH dark:hover:aI">
-                    Contact Us
+                    {t("support.page4")}
                   </a>
                 </li>
               </ul>
@@ -145,19 +160,21 @@ const Footer = () => {
           </div>
           <div className="a4 a1v sm:a1S/2 md:a1p/12 lg:a1T/12 xl:a1W/12">
             <div className="a1U">
-              <h3 className="a1X aE a1Y a1K a1t dark:aI">Get in touch</h3>
+              <h3 className="a1X aE a1Y a1K a1t dark:aI">
+                {t("getintouch.title")}
+              </h3>
               <div className="a23">
                 <div>
-                  <p className="aE aF aG">Toll Free Customer Care</p>
+                  <p className="aE aF aG">{t("getintouch.text1")}</p>
                   <a
                     href="tel:+(1) 123 456 7890"
                     className="aE aF a1t hover:aH dark:aI dark:hover:aH"
                   >
-                    +(1) 123 456 7890
+                    +(221) 78 600 45 64
                   </a>
                 </div>
                 <div>
-                  <p className="aE aF aG">Need live support?</p>
+                  <p className="aE aF aG">{t("getintouch.text2")}</p>
                   <a
                     href="/cdn-cgi/l/email-protection#f0838580809f8284b0949f9d91999ede939f9d"
                     className="aE aF a1t hover:aH dark:aI dark:hover:aH"
@@ -166,7 +183,7 @@ const Footer = () => {
                       className="__cf_email__"
                       data-cfemail="a8dbddd8d8c7dadce8ccc7c5c9c1c686cbc7c5"
                     >
-                      [email&#160;protected]
+                      hotcodesagency@gmail.com
                     </span>
                   </a>
                 </div>
@@ -175,16 +192,16 @@ const Footer = () => {
           </div>
           <div className="a4 a1v sm:a1S/2 md:a1p/12 lg:a1p/12 xl:a1T/12">
             <div className="a1U">
-              <h3 className="a1X aE a1Y a1K a1t dark:aI">Newsletter</h3>
-              <p className="a1V aE aF aG">
-                Subscribe to receive future updates
-              </p>
+              <h3 className="a1X aE a1Y a1K a1t dark:aI">
+                {t("newsletter.title")}
+              </h3>
+              <p className="a1V aE aF aG">{t("newsletter.text")}</p>
               <form className="ac">
                 <input
                   type="email"
                   name="email"
                   id="email"
-                  placeholder="Email address"
+                  placeholder={t("newsletter.email")}
                   className="a24 a4 aS aT a17 a25 a26 aF aG a27 focus:border-blue-color
                    dark:border-transparent dark:bg-[#2C3443]"
                 />
@@ -207,21 +224,19 @@ const Footer = () => {
             <div className="a4 a1v md:a1S/2 lg:a1W/3">
               <div className="a1I a5 a9 am a12 a1x aV dark:a1z[#2E333D] md:a2g md:as md:a2h md:a2i">
                 <a href="#" className="aE aF aG hover:aH">
-                  English
+                  {t("buttom.lang")}
                 </a>
                 <a href="#" className="aE aF aG hover:aH">
-                  Privacy Policy
+                  {t("buttom.privacy")}
                 </a>
                 <a href="#" className="aE aF aG hover:aH">
-                  Support
+                  {t("buttom.support")}
                 </a>
               </div>
             </div>
             <div className="a4 a1v md:a1S/2 lg:a1S/3">
               <div>
-                <p className="az aE aF aG lg:a2j">
-                  © 2025 Startup. All rights reserved
-                </p>
+                <p className="az aE aF aG lg:a2j">{t("buttom.rights")}</p>
               </div>
             </div>
           </div>

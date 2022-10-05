@@ -1,22 +1,19 @@
 import React from "react";
 import ReactWow from "react-wow";
-import Image from "next/image";
+import { useTranslation } from "next-i18next";
 
 const Features = () => {
+  const { t } = useTranslation("common");
   return (
-    <section id="features" className="a1P sm:a1Q lg:a1u[130px]">
+    <section id="services" className="a1P sm:a1Q lg:a1u[130px]">
       <div className="a1v xl:a1w">
         <ReactWow animation="fadeInUp" delay="0.2s">
           <div className="ac a1B a2J ae[620px] a1C az md:a1U lg:a3p">
-            <span className="title"> FEATURES </span>
+            <span className="title"> SERVICES </span>
             <h2 className="a1I aE a1J a1G a1t dark:text-white sm:a1L md:a1F[50px] md:a3f[60px]">
-              Our Unique & Awesome Core Features
+              {t("services.title")}
             </h2>
-            <p className="aF aG">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-              ante in maximus.
-            </p>
+            <p className="aF aG">{t("services.text")}</p>
           </div>
         </ReactWow>
         <div className="a1R a5 a6 am">
@@ -39,12 +36,9 @@ const Features = () => {
                 </div>
                 <div>
                   <h3 className="a3s aE a2Z a1K a1t dark:text-white sm:a1Y md:a1I">
-                    Crafted for Startups
+                    {t("services.marketing.title")}
                   </h3>
-                  <p className="aF aG">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    convallis tortor.
-                  </p>
+                  <p className="aF aG">{t("services.marketing.text")}</p>
                 </div>
               </div>
             </ReactWow>
@@ -68,12 +62,9 @@ const Features = () => {
                 </div>
                 <div>
                   <h3 className="a3s aE a2Z a1K a1t dark:text-white sm:a1Y md:a1I">
-                    High-quality Design
+                    {t("services.quality.title")}
                   </h3>
-                  <p className="aF aG">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    convallis tortor.
-                  </p>
+                  <p className="aF aG">{t("services.quality.text")}</p>
                 </div>
               </div>
             </ReactWow>
@@ -97,12 +88,9 @@ const Features = () => {
                 </div>
                 <div>
                   <h3 className="a3s aE a2Z a1K a1t dark:text-white sm:a1Y md:a1I">
-                    All Essential Sections
+                    {t("services.webdev.title")}
                   </h3>
-                  <p className="aF aG">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    convallis tortor.
-                  </p>
+                  <p className="aF aG">{t("services.webdev.text")}</p>
                 </div>
               </div>
             </ReactWow>
@@ -126,12 +114,9 @@ const Features = () => {
                 </div>
                 <div>
                   <h3 className="a3s aE a2Z a1K a1t dark:text-white sm:a1Y md:a1I">
-                    Speed Optimized
+                    {t("services.optimization.title")}
                   </h3>
-                  <p className="aF aG">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    convallis tortor.
-                  </p>
+                  <p className="aF aG">{t("services.optimization.text")}</p>
                 </div>
               </div>
             </ReactWow>
@@ -155,12 +140,9 @@ const Features = () => {
                 </div>
                 <div>
                   <h3 className="a3s aE a2Z a1K a1t dark:text-white sm:a1Y md:a1I">
-                    Fully Customizable
+                    {t("services.custom.title")}
                   </h3>
-                  <p className="aF aG">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    convallis tortor.
-                  </p>
+                  <p className="aF aG">{t("services.custom.text")}</p>
                 </div>
               </div>
             </ReactWow>
@@ -184,12 +166,9 @@ const Features = () => {
                 </div>
                 <div>
                   <h3 className="a3s aE a2Z a1K a1t dark:text-white sm:a1Y md:a1I">
-                    Regular Updates
+                    {t("services.updates.title")}
                   </h3>
-                  <p className="aF aG">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    convallis tortor.
-                  </p>
+                  <p className="aF aG">{t("services.updates.text")}</p>
                 </div>
               </div>
             </ReactWow>

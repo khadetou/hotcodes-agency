@@ -18,6 +18,7 @@ const LangDropdown = () => {
             height="100%"
             objectFit="contain"
             layout="responsive"
+            alt="Usa flag"
           />
         </span>
         <span className={`w-[20px] ${locale === "en" && "hidden"}`}>
@@ -27,6 +28,7 @@ const LangDropdown = () => {
             height="100%"
             objectFit="contain"
             layout="responsive"
+            alt="France flag"
           />
         </span>
       </div>
@@ -50,7 +52,7 @@ const LangDropdown = () => {
         </button>
 
         <div
-          className="absolute right-0 z-10 w-56 mt-2 bg-white border border-gray-100 shadow-lg origin-top-right rounded-md dark:lg:border-transparent dark:lg:bg-[#2C3443]  hidden transition-all duration-300 lg:invisible lg:absolute lg:top-[120%] lg:block  lg:rounded lg:border lg:bg-white lg:text-left lg:opacity-0 lg:group-hover:visible group-hover:lg:top-full  group-hover:lg:opacity-100 "
+          className="absolute -right-[65px] md:right-0 z-10 w-56 mt-2 bg-white border border-gray-100 shadow-lg origin-top-right rounded-md dark:lg:border-transparent dark:lg:bg-[#2C3443] transition-all duration-300 invisible lg:absolute top-[120%]  lg:rounded lg:border lg:bg-white lg:text-left opacity-0 group-hover:visible group-hover:top-full  group-hover:opacity-100 "
           role="menu"
         >
           <div className="p-2">
@@ -63,6 +65,7 @@ const LangDropdown = () => {
                     height="100%"
                     objectFit="contain"
                     layout="responsive"
+                    alt="Usa flag"
                   />
                 </span>
                 <span>En</span>
@@ -84,6 +87,7 @@ const LangDropdown = () => {
                     height="100%"
                     objectFit="contain"
                     layout="responsive"
+                    alt="france flag"
                   />
                 </span>
                 <span>Fr</span>

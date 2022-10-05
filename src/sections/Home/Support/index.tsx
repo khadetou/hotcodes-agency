@@ -1,7 +1,9 @@
 import React from "react";
 import ReactWOW from "react-wow";
+import { useTranslation, UseTranslation } from "next-i18next";
 
 const Support = () => {
+  const { t } = useTranslation("common");
   return (
     <section id="support" className="a1P sm:a1Q lg:a1u[130px]">
       <div className="a1v xl:a1w">
@@ -11,31 +13,23 @@ const Support = () => {
               <div className="a4 a1v lg:a1S/2">
                 <ReactWOW animation="fadeInUp" delay="0.2s">
                   <div className="ac a2J ae[500px] a1C md:a2O lg:a3p">
-                    <span className="title !a3 !a4c"> SUPPORT </span>
+                    <span className="title !a3 !a4c">
+                      {" "}
+                      {t("contactus.title")}{" "}
+                    </span>
                     <h2 className="a1I aE a1J a1G a1t dark:text-white sm:a1L md:a1F[50px] md:a3f[60px]">
-                      Need Any Help? Say hello
+                      {t("contactus.subtitle")}
                     </h2>
-                    <p className="aF aG">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                      Donec vitae tortor aliquam ante.
-                    </p>
+                    <p className="aF aG">{t("contactus.text")}</p>
                   </div>
                 </ReactWOW>
               </div>
               <div className="a4 a1v lg:a1S/2">
                 <ReactWOW animation="fadeInUp" delay="0.2s">
                   <div className="a5 a9">
-                    <span className="a4d a4e a4 ae[200px] a0 dark:an"></span>
-                    <a
-                      href="/cdn-cgi/l/email-protection#6801060e07280f071b1c091a1c1d18460b0705"
-                      className="aE a2Z a1t dark:text-white md:a1J lg:a2Z xl:a1J"
-                    >
-                      <span
-                        className="__cf_email__"
-                        data-cfemail="6e070008012e09011d1a0f1c1a1b1e400d0103"
-                      >
-                        [email&#160;protected]
-                      </span>
+                    <span className="a4d a4e a4 sm:block hidden ae[200px] a0 dark:an"></span>
+                    <a className="aE text-base sm:text-xl a1t dark:text-white md:a1J lg:a2Z xl:a1J">
+                      <span>hotcodesagency@gmail.com</span>
                     </a>
                   </div>
                 </ReactWOW>
@@ -46,7 +40,7 @@ const Support = () => {
                 <div className="a4 a1v md:a1S/2 lg:a1S/4">
                   <div className="a1V">
                     <h3 className="a44 aE aF a1t dark:text-white sm:a2Z">
-                      Email Address
+                      {t("contactus.mail")}
                     </h3>
                     <p className="aF a1K aG">
                       <a
@@ -54,7 +48,7 @@ const Support = () => {
                         className="__cf_email__"
                         data-cfemail="ee9d9b9e9e819c9aae9d9a8f9c9a9b9ec08d8183"
                       >
-                        [email&#160;protected]
+                        hotcodesagency@gmail.com
                       </a>
                     </p>
                   </div>
@@ -62,25 +56,22 @@ const Support = () => {
                 <div className="a4 a1v md:a1S/2 lg:a1S/4">
                   <div className="a1V">
                     <h3 className="a44 aE aF a1t dark:text-white sm:a2Z">
-                      Phone Number
+                      {t("contactus.phone")}
                     </h3>
-                    <p className="aF a1K aG">+009 8754 3433 223</p>
+                    <p className="aF a1K aG">+221 78 600 45 64</p>
                   </div>
                 </div>
                 <div className="a4 a1v md:a1S/2 lg:a1S/4">
                   <div className="a1V">
                     <h3 className="a44 aE aF a1t dark:text-white sm:a2Z">
-                      Office Location
+                      {t("contactus.location")}
                     </h3>
-                    <p className="aF a1K aG">
-                      76/A, Green valle, Califonia USA.
-                    </p>
+                    <p className="aF a1K aG">39 Castor Dakar.</p>
                   </div>
                 </div>
                 <div className="a4 a1v md:a1S/2 lg:a1S/4">
                   <div className="a1V a5 a9 a12 lg:a4f">
                     <a
-                      // href="javascript:void(0)"
                       aria-label="social-link"
                       className="aG hover:aH dark:hover:aI"
                     >
@@ -94,7 +85,6 @@ const Support = () => {
                       </svg>
                     </a>
                     <a
-                      // href="javascript:void(0)"
                       aria-label="social-link"
                       className="aG hover:aH dark:hover:aI"
                     >
@@ -108,7 +98,6 @@ const Support = () => {
                       </svg>
                     </a>
                     <a
-                      // href="javascript:void(0)"
                       aria-label="social-link"
                       className="aG hover:aH dark:hover:aI"
                     >
@@ -122,7 +111,6 @@ const Support = () => {
                       </svg>
                     </a>
                     <a
-                      // href="javascript:void(0)"
                       aria-label="social-link"
                       className="aG hover:aH dark:hover:aI"
                     >
@@ -151,13 +139,13 @@ const Support = () => {
                       htmlFor="name"
                       className="a3s ai aE aF a1t dark:text-white"
                     >
-                      Your Name
+                      {t("contactus.form.name")}
                     </label>
                     <input
                       type="text"
                       name="name"
                       id="name"
-                      placeholder="Full Name"
+                      placeholder={t("contactus.form.nameplaceholder")}
                       className="a4 a1x at a2e aF a1K a1t a2P a27 focus:a28 dark:a1z[#2C3443] dark:text-white dark:focus:a2v"
                     />
                   </div>
@@ -168,13 +156,13 @@ const Support = () => {
                       htmlFor="email"
                       className="a3s ai aE aF a1t dark:text-white"
                     >
-                      Email Address
+                      {t("contactus.form.mail")}
                     </label>
                     <input
                       type="email"
                       name="email"
                       id="email"
-                      placeholder="Email Address"
+                      placeholder={t("contactus.form.mail")}
                       className="a4 a1x at a2e aF a1K a1t a2P a27 focus:a28 dark:a1z[#2C3443] dark:text-white dark:focus:a2v"
                     />
                   </div>
@@ -185,13 +173,13 @@ const Support = () => {
                       htmlFor="phone"
                       className="a3s ai aE aF a1t dark:text-white"
                     >
-                      Phone (Optional)
+                      {t("contactus.form.phone")}
                     </label>
                     <input
                       type="text"
                       name="phone"
                       id="phone"
-                      placeholder="Phone Number"
+                      placeholder={t("contactus.form.phoneplaceholder")}
                       className="a4 a1x at a2e aF a1K a1t a2P a27 focus:a28 dark:a1z[#2C3443] dark:text-white dark:focus:a2v"
                     />
                   </div>
@@ -202,13 +190,13 @@ const Support = () => {
                       htmlFor="subject"
                       className="a3s ai aE aF a1t dark:text-white"
                     >
-                      Subject
+                      {t("contactus.form.subject")}
                     </label>
                     <input
                       type="text"
                       name="subject"
                       id="subject"
-                      placeholder="Type Subject"
+                      placeholder={t("contactus.form.subjectplaceholder")}
                       className="a4 a1x at a2e aF a1K a1t a2P a27 focus:a28 dark:a1z[#2C3443] dark:text-white dark:focus:a2v"
                     />
                   </div>
@@ -219,13 +207,13 @@ const Support = () => {
                       htmlFor="message"
                       className="a3s ai aE aF a1t dark:text-white"
                     >
-                      Message
+                      {t("contactus.form.message")}
                     </label>
                     <textarea
                       rows={4}
                       name="message"
                       id="message"
-                      placeholder="Type Message"
+                      placeholder={t("contactus.form.messageplaceholder")}
                       className="a4 a2Q a1x at a2e aF a1K a1t a2P a27 focus:a28 dark:a1z[#2C3443] dark:text-white dark:focus:a2v"
                     ></textarea>
                   </div>
@@ -253,20 +241,19 @@ const Support = () => {
                             >
                               <path
                                 d="M10.0915 0.951972L10.0867 0.946075L10.0813 0.940568C9.90076 0.753564 9.61034 0.753146 9.42927 0.939309L4.16201 6.22962L1.58507 3.63469C1.40401 3.44841 1.11351 3.44879 0.932892 3.63584C0.755703 3.81933 0.755703 4.10875 0.932892 4.29224L0.932878 4.29225L0.934851 4.29424L3.58046 6.95832C3.73676 7.11955 3.94983 7.2 4.1473 7.2C4.36196 7.2 4.55963 7.11773 4.71406 6.9584L10.0468 1.60234C10.2436 1.4199 10.2421 1.1339 10.0915 0.951972ZM4.2327 6.30081L4.2317 6.2998C4.23206 6.30015 4.23237 6.30049 4.23269 6.30082L4.2327 6.30081Z"
-                                stroke-width="0.4"
+                                strokeWidth="0.4"
                               ></path>
                             </svg>
                           </span>
                         </div>
                       </div>
-                      I have read the terms of the Service & I accept Privacy
-                      Policy
+                      {t("contactus.form.privacy")}
                     </label>
                   </div>
                 </div>
                 <div className="a4 a1v">
                   <button className="a5 a4 a9 am aS a16 a1N[14px] aU aE aF aI hover:a19">
-                    Send Message
+                    {t("contactus.form.button")}
                   </button>
                 </div>
               </div>

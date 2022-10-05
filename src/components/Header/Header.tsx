@@ -4,6 +4,8 @@ import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import LangDropdown from "./LangDropdown";
 import { useRouter } from "next/router";
+import Link from "next/link";
+import { Link as SLink } from "react-scroll";
 
 interface HeaderProps {
   className?: string;
@@ -16,9 +18,9 @@ const Header: FC<HeaderProps> = ({ className, isSticky }) => {
   const { locale } = useRouter();
 
   const [toggle, setToggle] = useState(false);
-  useEffect(() => {
-    document.querySelector("html")!.style.overflow = toggle ? "hidden" : "auto";
-  }, [toggle]);
+  // useEffect(() => {
+  //   document.querySelector("html")!.style.overflow = toggle ? "hidden" : "auto";
+  // }, [toggle]);
 
   const changeTheme = (e: ChangeEvent<HTMLInputElement>) => {
     if (e.target.checked) {
@@ -28,137 +30,120 @@ const Header: FC<HeaderProps> = ({ className, isSticky }) => {
     }
   };
 
+  const menuItems = [
+    {
+      path: "home",
+      label: t("home"),
+    },
+    {
+      path: "services",
+      label: t("services"),
+    },
+    {
+      path: "about",
+      label: t("about"),
+    },
+    {
+      path: "team",
+      label: t("team"),
+    },
+    {
+      path: "portfolio",
+      label: t("portfolio"),
+    },
+    {
+      path: "pricing",
+      label: t("pricing"),
+    },
+
+    {
+      path: "contact",
+      label: t("contact"),
+    },
+  ];
   return (
     <header
       className={`py-5  absolute top-0 left-0 w-full ${className && className}`}
     >
-      <div className="lg:items-center flex w-full flex-wrap px-5 lg:flex-nowrap lg:px-5 xl:px-10 2xl:px-20">
+      <div className="xl:items-center flex w-full flex-wrap px-5 xl:flex-nowrap lg:px-5 xl:px-10 2xl:px-20">
         <div
-          className={`relative z-[99] max-w-[250px] lg:w-full ${
-            locale === "fr" ? "xl:max-w-[280px]" : "xl:max-w-[350px]"
+          className={`relative z-[99] max-w-[250px] xl:w-full ${
+            locale === "fr" ? "xl:max-w-[220px]" : "xl:max-w-[265px]"
           }`}
         >
-          <div>
-            <span className="hidden dark:block">
-              <Image
-                src="/images/logo/logo-dark.svg"
-                alt="logo"
-                className="hidden dark:block h-[50px]"
-                width={215}
-                height={50}
-              />
-            </span>
-            <span className="dark:hidden">
-              <Image
-                src="/images/logo/logo-light.svg"
-                alt="logo"
-                width={215}
-                height={50}
-              />
-            </span>
-          </div>
+          <Link href="/">
+            <button>
+              <span className="hidden dark:block">
+                <Image
+                  src="/images/logo/logo-dark.svg"
+                  alt="logo"
+                  className="hidden dark:block h-[50px]"
+                  width={215}
+                  height={50}
+                />
+              </span>
+              <span className="dark:hidden">
+                <Image
+                  src="/images/logo/logo-light.svg"
+                  alt="logo"
+                  width={215}
+                  height={50}
+                />
+              </span>
+            </button>
+          </Link>
         </div>
+
         <div
-          className={`fixed top-0 left-0 z-50 h-screen w-full justify-center bg-white p-5  lg:visible lg:static lg:flex lg:h-auto lg:justify-start lg:bg-transparent lg:p-0 lg:opacity-100 dark:bg-body-bg dark:lg:bg-transparent  ${
+          className={`fixed top-0 left-0 z-50 h-screen w-full justify-center bg-white p-5  xl:visible xl:static xl:flex xl:h-auto xl:justify-start xl:bg-transparent xl:p-0 xl:opacity-100 dark:text-gray text-gray  dark:bg-body-bg dark:xl:bg-transparent  ${
             toggle ? "flex" : "hidden"
           }`}
         >
           <div className="w-full self-center ">
             <nav>
-              <ul className="flex flex-col items-center justify-center text-center lg:flex-row lg:justify-start">
-                <li>
-                  <a
-                    href="#home"
-                    className={`menu-scroll active hover:!text-blue-color dark:hover:!text-white  inline-flex items-center justify-center text-center font-lexend text-base text-body-bg lg:py-7 ${
-                      isSticky ? "lg:py-5 py-5" : "py-7 lg:py-7"
-                    }   `}
-                  >
-                    {t("home")}
-                  </a>
-                </li>
-                <li className="lg:ml-10 mt-5 lg:mt-0">
-                  <a
-                    href="#features"
-                    className={`menu-scroll  hover:!text-blue-color dark:hover:!text-white  inline-flex items-center justify-center text-center font-lexend text-base !text-gray text-body-bg lg:py-7 ${
-                      isSticky ? "lg:py-5 py-5" : "py-7 lg:py-7"
-                    }  `}
-                  >
-                    {t("about")}
-                  </a>
-                </li>
-                <li className="lg:ml-10 mt-5 lg:mt-0">
-                  <a
-                    href="#features"
-                    className={`menu-scroll  hover:!text-blue-color dark:hover:!text-white  inline-flex items-center justify-center text-center font-lexend text-base !text-gray text-body-bg lg:py-7 ${
-                      isSticky ? "lg:py-5 py-5" : "py-7 lg:py-7"
-                    }  `}
-                  >
-                    {t("portfolio")}
-                  </a>
-                </li>
-                <li className="lg:ml-10 mt-5 lg:mt-0">
-                  <a
-                    href="#features"
-                    className={`menu-scroll  hover:!text-blue-color dark:hover:!text-white  inline-flex items-center justify-center text-center font-lexend text-base !text-gray text-body-bg lg:py-7 ${
-                      isSticky ? "lg:py-5 py-5" : "py-7 lg:py-7"
-                    }  `}
-                  >
-                    Services
-                  </a>
-                </li>
-                <li className="submenu-item group relative lg:ml-10 mt-5 lg:mt-0">
-                  <a
-                    // href="javascript:void(0)"
-                    className={`submenu-taggler !text-gray hover:!text-blue-color dark:hover:!text-white  inline-flex items-center justify-center text-center font-lexend text-base text-body-bg lg:py-7 ${
-                      isSticky ? "lg:py-5 py-5" : "py-7 lg:py-7"
-                    }`}
-                  >
-                    {t("blog")}
-                    {/* <span className="pl-3">
-                      <svg
-                        width="14"
-                        height="8"
-                        viewBox="0 0 14 8"
-                        className="fill-current"
-                      >
-                        <path d="M6.54564 5.09128L11.6369 0L13.0913 1.45436L6.54564 8L0 1.45436L1.45436 0L6.54564 5.09128Z" />
-                      </svg>
-                    </span> */}
-                  </a>
-                  {/* <Submenu /> */}
-                </li>
-                <li className="lg:ml-10 mt-5 lg:mt-0">
-                  <a
-                    href="#support"
-                    className={`menu-scroll hover:!text-blue-color dark:hover:!text-white  inline-flex items-center justify-center !text-gray text-center font-lexend text-base text-body-bg lg:py-7 ${
-                      isSticky ? "lg:py-5 py-5" : "py-7 lg:py-7"
-                    }`}
-                  >
-                    {t("contact")}
-                  </a>
-                </li>
-                <li className="lg:ml-10 mt-5 lg:mt-0">
+              <ul className="flex flex-col items-center justify-center text-center xl:flex-row text-gray  ">
+                {menuItems.map(({ path, label }, index) => (
+                  <li className="xl:ml-5  xl:mt-0 " key={index}>
+                    <SLink
+                      activeClass="!text-blue-color"
+                      className={`menu-scroll  hover:!text-blue-color dark:hover:!text-white cursor-pointer  inline-flex items-center justify-center text-center font-lexend text-base dark:text-gray text-gray  xl:py-7 ${
+                        isSticky ? "xl:py-5 py-2" : "py-2 xl:py-7"
+                      }  `}
+                      onClick={() => setToggle(false)}
+                      to={path}
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                    >
+                      {label}
+                    </SLink>
+                  </li>
+                ))}
+
+                <li className="xl:ml-10 mt-5 xl:mt-0">
                   <LangDropdown />
                 </li>
               </ul>
             </nav>
           </div>
-          <div className="items-center absolute left-0 bottom-0 flex w-full justify-between self-center p-5 lg:static lg:w-auto lg:self-center lg:p-0">
+          <div className="items-center absolute left-0 bottom-0 flex w-full justify-between self-center p-5 xl:static xl:w-auto xl:self-center xl:p-0">
             <a
               href="signup.html"
-              className="whitespace-nowrap w-full rounded bg-blue-color py-3 text-center font-lexend text-white lg:w-auto px-6"
+              className="whitespace-nowrap w-full rounded bg-blue-color py-3 text-center font-lexend text-white xl:w-auto px-6"
             >
               {t("signin")}
             </a>
             <a
               href="signup.html"
-              className=" w-full whitespace-nowrap rounded bg-blue-dark py-3 px-6 text-center font-lexend text-white lg:w-auto ml-5"
+              className=" w-full whitespace-nowrap rounded bg-blue-dark py-3 px-6 text-center font-lexend text-white xl:w-auto ml-5"
             >
               {t("signup")}
             </a>
           </div>
         </div>
-        <div className="absolute top-1/2 right-[1.25rem] z-50 flex -translate-y-1/2 items-center lg:static lg:translate-y-0">
+
+        <div className="absolute top-1/2 right-[1.25rem] z-50 flex -translate-y-1/2 items-center xl:static xl:translate-y-0">
           <label
             htmlFor="darkToggler"
             className=" dark:text-white  z-40 relative flex h-[2.25rem] items-center justify-center w-9 cursor-pointer rounded-full text-black md:h-14 md:w-14"
@@ -205,7 +190,7 @@ const Header: FC<HeaderProps> = ({ className, isSticky }) => {
           </label>
 
           <button
-            className="menu-toggler relative z-50 text-body-bg dark:text-white lg:hidden"
+            className="menu-toggler relative z-50 text-body-bg dark:text-white xl:hidden"
             onClick={() => setToggle(!toggle)}
           >
             <svg

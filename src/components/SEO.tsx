@@ -13,7 +13,7 @@ const SEO: FC<SeoProps> = ({
   description = "Hotcodes agency | Developement Web | Developement Mobile | Marketing Digital",
   author = "Khadetou Dianifabe",
   meta,
-  title = "Marché Sénégal, Achetez vite vos denrées alimentaires",
+  title = "Hotcodes Agency",
 }) => {
   const metaData = [
     {

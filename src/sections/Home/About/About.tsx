@@ -1,22 +1,20 @@
 import Image from "next/image";
 import ReactWOW from "react-wow";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { useTranslation } from "next-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
   return (
     <section id="about" className="a1P sm:a1Q lg:a1u[130px]">
       <div className="a1v xl:a1w">
         <ReactWOW animation="fadeInUp" delay="0.2s">
           <div className=" ac a1B a2J a1C az lg:a1U lg:a3p">
-            <span className="title"> ABOUT US </span>
+            <span className="title"> {t("about.title")} </span>
             <h2 className="a1B a1I ae[570px] aE a1J a1G a1t dark:text-white sm:a1L md:a1F[50px] md:a3f[60px]">
-              Know Details About Our Company
+              {t("about.subtitle")}
             </h2>
-            <p className="a1B ae[570px] aF aG">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-              ante in maximus.
-            </p>
+            <p className="a1B ae[570px] aF aG">{t("about.text")}</p>
           </div>
         </ReactWOW>
         <ReactWOW animation="fadeInUp" delay="0.3s">
@@ -85,13 +83,13 @@ const About = () => {
             <div className="tabButtons  a4  ">
               <TabList className="flex w-full">
                 <Tab className="w-full a4 a1x a21 a1D a3w aE aF a1K hover:border-blue-color hover:text-blue-color dark:border-gray dark:text-white dark:hover:border-blue-color lg:a3x lg:a3y text-center cursor-pointer">
-                  About Us
+                  {t("about.title")}
                 </Tab>
                 <Tab className="w-full a4 a1x a21 a1D a3w aE aF a1K hover:border-blue-color hover:text-blue-color dark:border-gray dark:text-white dark:hover:border-blue-color lg:a3x lg:a3y text-center cursor-pointer">
-                  Our Mission
+                  {t("about.mission.title")}
                 </Tab>
                 <Tab className="w-full a4 a1x a21 a1D a3w aE aF a1K hover:border-blue-color hover:text-blue-color dark:border-gray dark:text-white dark:hover:border-blue-color lg:a3x lg:a3y text-center cursor-pointer">
-                  Our Vision
+                  {t("about.vision.title")}
                 </Tab>
               </TabList>
             </div>
@@ -156,23 +154,10 @@ const About = () => {
                   <div className="a4 a1v lg:a1S/2">
                     <div className="max-w-[565px] lg:a3C">
                       <h2 className="a1E aE a1Y a3D a1t dark:text-white sm:a1F[40px] sm:a3f[50px]">
-                        We are Creative Digital Agency Based in USA #1
+                        {t("about.aboutus.text.title")}
                       </h2>
                       <p className="a1V aF aG">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Fusce condimentum sapien ac leo cursus dignissim. In ac
-                        lectus vel orci accumsan ultricies at in libero
-                        accumsan.
-                      </p>
-                      <p className="a1V aF aG">
-                        Phasellus ex massa, facilisis ac vestibulum eget,
-                        ultrices quis nulla. Integer vitae magna lacus. Sed
-                        venenatis auctor dolor.
-                      </p>
-                      <p className="aF aG">
-                        Phasellus ex massa, facilisis ac vestibulum eget,
-                        ultrices quis nulla. Integer vitae magna lacus. Sed
-                        venenatis auctor dolor.
+                        {t("about.aboutus.text.body")}
                       </p>
                     </div>
                   </div>
@@ -240,23 +225,10 @@ const About = () => {
                     <div className="a4 a1v lg:a1S/2">
                       <div className="max-w-[565px] lg:a3C">
                         <h2 className="a1E aE a1Y a3D a1t dark:text-white sm:a1F[40px] sm:a3f[50px]">
-                          We are Creative Digital Agency Based in USA #2
+                          {t("about.mission.text.title")}
                         </h2>
                         <p className="a1V aF aG">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Fusce condimentum sapien ac leo cursus
-                          dignissim. In ac lectus vel orci accumsan ultricies at
-                          in libero accumsan.
-                        </p>
-                        <p className="a1V aF aG">
-                          Phasellus ex massa, facilisis ac vestibulum eget,
-                          ultrices quis nulla. Integer vitae magna lacus. Sed
-                          venenatis auctor dolor.
-                        </p>
-                        <p className="aF aG">
-                          Phasellus ex massa, facilisis ac vestibulum eget,
-                          ultrices quis nulla. Integer vitae magna lacus. Sed
-                          venenatis auctor dolor.
+                          {t("about.mission.text.body")}
                         </p>
                       </div>
                     </div>
@@ -325,23 +297,10 @@ const About = () => {
                     <div className="a4 a1v lg:a1S/2">
                       <div className="max-w-[565px] lg:a3C">
                         <h2 className="a1E aE a1Y a3D a1t dark:text-white sm:a1F[40px] sm:a3f[50px]">
-                          We are Creative Digital Agency Based in USA #3
+                          {t("about.vision.text.title")}
                         </h2>
                         <p className="a1V aF aG">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Fusce condimentum sapien ac leo cursus
-                          dignissim. In ac lectus vel orci accumsan ultricies at
-                          in libero accumsan.
-                        </p>
-                        <p className="a1V aF aG">
-                          Phasellus ex massa, facilisis ac vestibulum eget,
-                          ultrices quis nulla. Integer vitae magna lacus. Sed
-                          venenatis auctor dolor.
-                        </p>
-                        <p className="aF aG">
-                          Phasellus ex massa, facilisis ac vestibulum eget,
-                          ultrices quis nulla. Integer vitae magna lacus. Sed
-                          venenatis auctor dolor.
+                          {t("about.vision.text.body")}
                         </p>
                       </div>
                     </div>

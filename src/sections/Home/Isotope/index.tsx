@@ -26,22 +26,23 @@ const Isotope: FC<{ movies: any }> = ({ movies }) => {
         className="popular-movies grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] gap-4 gap-y-8 "
       >
         <AnimatePresence>
-          {filtered.map((movie: any) => (
+          {filtered.map((movie: any, key) => (
             <motion.div
-            // animate={{ opacity: 1 }}
-            // initial={{ opacity: 0 }}
-            // exit={{ opacity: 0 }}
-            //  layout
+              // animate={{ opacity: 1 }}
+              // initial={{ opacity: 0 }}
+              // exit={{ opacity: 0 }}
+              //  layout
+              key={key}
             >
               <div>
                 <h2 className="text-white text-center text-[0.8rem]">
                   {movie.title}
                 </h2>
-                <img
+                {/* <img
                   src={"https://image.tmdb.org/t/p/w500" + movie.backdrop_path}
                   className="mx-auto w-full h-[30vh] object-cover rounded-2xl mb-4"
                   alt=""
-                />
+                /> */}
               </div>
             </motion.div>
           ))}

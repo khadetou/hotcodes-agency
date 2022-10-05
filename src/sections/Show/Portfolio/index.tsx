@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import ReactWOW from "react-wow";
-import ShowCase from "@/components/Portfolio/ShowCase";
+import ShowCase from "@/components/Show/index";
 import { useTranslation } from "next-i18next";
 import { FC } from "react";
 import { mapImageResources } from "../../../../lib/cloudinary";
@@ -106,7 +106,7 @@ const Portfolio: FC<PortfolioProps> = ({
                   handleOnFolderClick("all");
                 }}
               >
-                {t("portfolio.categorybtn.button1")}
+                All
               </button>
               {folders.map((folder: any) => (
                 <button
@@ -122,9 +122,7 @@ const Portfolio: FC<PortfolioProps> = ({
                     handleOnFolderClick(folder.path);
                   }}
                 >
-                  {folder.name === "ecommerce"
-                    ? t("portfolio.categorybtn.button2")
-                    : t("portfolio.categorybtn.button3")}
+                  {folder.name}
                 </button>
               ))}
             </div>
@@ -135,29 +133,6 @@ const Portfolio: FC<PortfolioProps> = ({
             activate={activate}
             images={images}
           />
-          <ReactWOW animation="fadeInUp" delay="0.2s">
-            <div className="a4 a2_ az">
-              <Link href="/show">
-                <a className="aD a9 aS a16 a1N[14px] aU aE aF aI hover:a19">
-                  {t("portfolio.button")}
-                  <span className="aK">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12.172 7L6.808 1.636L8.222 0.222L16 8L8.222 15.778L6.808 14.364L12.172 9H0V7H12.172Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </Link>
-            </div>
-          </ReactWOW>
         </div>
       </div>
     </section>

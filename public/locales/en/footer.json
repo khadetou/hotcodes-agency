@@ -1,0 +1,33 @@
+{
+  "textlogo": "Hotcodes, the company that gives you all the codes and access you need, intent on taking the lead when it comes to it.",
+  "company": {
+    "title": "Company",
+    "page1": "Home",
+    "page2": "Products",
+    "page3": "Careers",
+    "page4": "Pricing"
+  },
+  "support": {
+    "title": "Support",
+    "page1": "Company",
+    "page2": "Press Media",
+    "page3": "Our Blog",
+    "page4": "Contact Us"
+  },
+  "getintouch": {
+    "title": "Get in Touch",
+    "text1": "Toll Free Customer Care",
+    "text2": "Need live support?"
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "text": "Subscribe to receive future updates",
+    "email": "Email Address"
+  },
+  "buttom": {
+    "lang": "English",
+    "privacy": "Privacy Policy",
+    "support": "Support",
+    "rights": "hotcodesagency © 2022 Startup. All rights reserved"
+  }
+}
