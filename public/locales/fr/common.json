@@ -3,38 +3,43 @@
     "toptitle": "Avez vous une vison? Rendons la possible!",
     "title": {
       "text": "Solutions Digital pour votre",
-      "list": ["Saas", "Agence", "Startup", "Business"]
+      "list": [
+        "Saas",
+        "Agence",
+        "Startup",
+        "Business"
+      ]
     },
     "text": "Hotcodes est une société de développement web qui fournit une technologie de pointe afin de faire croître votre business. Nous avons une équipe de développeurs talentueux, de designers et de spécialistes du marketing numérique qui vous aideront à devenir meilleurs avec nos services extraordinaires.",
     "button": "Commencer",
     "video": "Regarder la video"
   },
   "services": {
-    "title": "Nos services de base uniques et impressionnantes",
-    "text": "Hotcodes fournit les meilleurs services qui pourraient répondre à vos besoins. Notre équipe travaille continuellement pour s’assurer que vous êtes satisfait de nos services. Hotcodes est la plate-forme leader pour l’industrie du tech, et nous visons à fournir les meilleurs produits et services pour nos clients.",
+    "title": "Nos Services Centraux Étonnants et Uniques.",
+    "text": "Chez Hotcodes, nous offrons une gamme complète de services de développement web, de développement mobile et de marketing numérique pour aider les entreprises à grandir et à atteindre leur plein potentiel. ",
     "marketing": {
       "title": "Marketing Digital",
-      "text": "Nos services de marketing numérique vous permettront de trouver votre entreprise dans les recherches, de stimuler les pistes et les ventes et de vous garder en tête de la concurrence."
+      "text": "Les services de marketing numérique de Hotcodes visent à aider les entreprises à atteindre leur public cible en ligne."
     },
     "quality": {
       "title": "Design de haute qualité",
-      "text": "Vous ne pouvez pas vous tromper avec HotCodes. Nous faisons un design de haute qualité pour votre entreprise. Ne nous croyez pas sur parole — regardez simplement notre incroyable portfolio de templates."
+      "text": "Chez Hotcodes, nous offrons des services de design de haute qualité qui peuvent améliorer l'apparence visuelle de votre marque."
     },
     "webdev": {
       "title": "Development Web",
-      "text": "La conception adaptative du Web est essentielle. Nous nous assurons que chaque projet est réalisé correctement et qu’il respecte les normes du monde du front-end."
+      "text": "Chez Hotcodes, notre service de développement web est axé sur la livraison de solutions de haute qualité et innovantes pour répondre aux besoins de nos clients."
     },
     "optimization": {
       "title": "Optimisation de la vitesse",
-      "text": "Nous optimisons les sites web et les accélérons. Nous fournissons des pages hyper-optimisées qui se chargent plus rapidement que le HTML original. Nous utilisons nextjs et Nuxt, qui offrent des sites Web rapides, performants et stables avec chargement à chaud ou des charges de contenu défini par l’utilisateur options maintenant disponibles pour vous d’utiliser!"
+      "text": "Chez Hotcodes, nous fournissons des services de SEO et d'optimisation de la vitesse de première qualité conçus pour améliorer la visibilité de votre site web et améliorer sa vitesse de chargement."
     },
     "custom": {
       "title": "Applications entièrement personnalisables",
-      "text": "Nous créons des applications entièrement personnalisables qui ont un bel aspect, sont faciles à utiliser et aident vos clients à obtenir ce dont ils ont besoin."
+      "text": "Notre service d'applications entièrement personnalisables offre aux clients la possibilité de contrôler complètement le design, la fonctionnalité et l'expérience utilisateur de leurs applications mobiles."
     },
     "updates": {
       "title": "Mises à Jour Régulières",
-      "text": "Hotcodes est une entreprise de conception et de développement Web à service complet qui travaille avec les petites entreprises, les entrepreneurs et les professionnels pour aider à construire leurs sites. Nous maintenons votre site Web existant, offrons une formation continue sur les pratiques exemplaires actuelles du site Web et mettons votre site à jour régulièrement."
+      "text": "Nous offrons des mises à jour régulières pour tous ses services de développement d'applications web et mobiles, garantissant que les clients restent à jour avec les dernières technologies et fonctionnalités."
     }
   },
   "about": {
@@ -42,31 +47,31 @@
     "subtitle": "Connaître tous les détails de notre entreprise",
     "text": "Notre objectif est de construire des entreprises à croissance rapide en adoptant les tendances du marché et en fournissant des services de haute qualité dans un marché hautement compétitif.",
     "aboutus": {
-      "title": "Who we are",
+      "title": "Qui Sommes Nous",
       "text": {
-        "title": "Hotcodes est un groupe de développeurs, concepteurs et spécialistes du marketing",
-        "body": " qui ont pour but de conquérir les plus grands marchés internationaux. Nous sommes passionnés par le sujet de la technologie et notre objectif est de créer des entreprises à croissance rapide."
+        "title": "Notre Histoire et Objectif",
+        "body": "Hotcodes est une entreprise de service complet en IT qui fournit une large gamme de services, y compris le développement web, le développement mobile, le marketing numérique et un design de qualité supérieure. Nous sommes une équipe de professionnels expérimentés dédiés à la livraison de solutions de pointe qui répondent aux besoins uniques de nos clients et les aident à atteindre leurs objectifs. Notre objectif est de fournir à nos clients les outils dont ils ont besoin pour réussir dans le paysage numérique d'aujourd'hui, et notre engagement envers l'excellence garantit que nous livrons constamment des résultats de qualité supérieure."
       }
     },
     "mission": {
       "title": "Notre Mission",
       "text": {
-        "title": "Hotcodes est une société de services",
-        "body": "Nous croyons que les obstacles qui ont empêché les petits investisseurs d’entrer sur les marchés financiers deviennent rapidement désuets. Nous envisageons un monde où l’on peut facilement investir dans des entreprises de licorne, ou participer aux offres publiques initiales de grandes entreprises, avec peu ou pas de risque personnalisé ou financier."
+        "title": "Notre Dévouement à l'Excellence : Notre Mission de Révolutionner l'Industrie de l'IT",
+        "body": "Notre mission chez Hotcodes est de fournir des solutions numériques innovantes et de qualité supérieure pour aider les entreprises à réussir dans le paysage numérique en constante évolution. Notre objectif est d'aider les entreprises à se développer en offrant une large gamme de services, notamment le développement web, le développement mobile et le marketing numérique. Nous nous efforçons de livrer des résultats exceptionnels qui répondent aux besoins uniques de chacun de nos clients et les aident à atteindre leurs objectifs."
       }
     },
     "vision": {
       "title": "Notre Vision",
       "text": {
-        "title": "Nous sommes une équipe de jeunes hommes qui partagent la même vision :",
-        "body": "Nous sommes une équipe jeune, ambitieuse et dynamique d’hommes qui se sont réunis pour réaliser nos rêves et visions respectives. Nous partageons la même vision de révolutionner la valeur marchande de l’Afrique et de créer de la richesse pour l'afrique en bâtissant une Afrique économiquement forte et prospère."
+        "title": "Façonner l'Avenir de la Technologie",
+        "body": "Chez Hotcodes, notre vision est de devenir un acteur majeur sur le marché mondial de l'IT. Nous nous efforçons de fournir des solutions innovantes qui ont un impact réel sur la vie de nos clients. Nous sommes dédiés à la croissance et au développement de l'Afrique et croyons que la technologie a le pouvoir de provoquer des changements positifs."
       }
     }
   },
   "team": {
     "title": "NOTRE EQUIPE",
     "subtitle": "Rencontrez notre équipe créative dévouée",
-    "text": "Nous sommes une équipe de développeurs professionnels qui sont impatients de travailler sur votre prochain projet d'application mobile ou web. Notre équipe créera une application qui résout votre problème, que ce soit un site web ou une application."
+    "text": "Notre équipe est composée de professionnels hautement qualifiés et expérimentés qui sont dédiés à fournir les meilleures solutions possibles à nos clients. Nos développeurs, designers et marketeurs utilisent leur expertise pour créer des solutions innovantes et efficaces qui répondent aux besoins uniques de chaque projet."
   },
   "portfolio": {
     "title": "Portfolio",

@@ -3,7 +3,12 @@
     "toptitle": "Do you have a vison ? Let's make it happen !",
     "title": {
       "text": "Digital Solutions for Your",
-      "list": ["Saas", "Agency", "Startup", "Business"]
+      "list": [
+        "Saas",
+        "Agency",
+        "Startup",
+        "Business"
+      ]
     },
     "text": "Hotcodes is a web development company that provides cutting edge technology to make your business grow. We have a team of talented developers, designers and digital marketers who will help you to become better with our extraordinary services.",
     "button": "Get Started",
@@ -11,30 +16,30 @@
   },
   "services": {
     "title": "Our Unique & Awesome Core Services",
-    "text": "Hotcodes provides the best services that might suit your needs. Our team works continuously to ensure that you are satisfied with our services. Hotcodes is the leading platform for the tech industry, and we aim to provide the best products and services for our clients.",
+    "text": "At Hotcodes, we offer a comprehensive range of web development, mobile development, and digital marketing services to help businesses grow and reach their full potential. Our experienced team of developers and marketers use the latest technology and techniques to create custom solutions that meet the unique needs of each client.",
     "marketing": {
       "title": "Digital Marketing",
-      "text": "HotCodes’ Digital Marketing Services will get your business found in searches, drive leads and sales, and keep you ahead of the competition"
+      "text": "Hotcodes provides comprehensive digital marketing services to help businesses reach their target audience and achieve their marketing goals."
     },
     "quality": {
       "title": "High-quality Design",
-      "text": "You can't go wrong with HotCodes. We make high quality design for your business. Don't take our word for it--just check out our amazing portfolio of templates."
+      "text": "At Hotcodes, we offer high quality design services that can elevate the visual appeal of your brand."
     },
     "webdev": {
       "title": "Web Development",
-      "text": "Responsive Web design is key. Here at HotCodes, we ensure that every project is done right and meet the standards in the front-end world."
+      "text": "At Hotcodes, our web development service is centered around delivering high quality and innovative solutions to meet the needs of our clients."
     },
     "optimization": {
       "title": "Speed Optimization",
-      "text": "We optimizes fast websites and speeds them up. We provide hyper-optimized pages that load faster than the original HTML. We use nextjs and Nuxt, which deliver fast, performant, stable websites with hotloading or loads of content user-defined options now available for you to use!"
+      "text": "Hotcodes provides top-notch SEO and speed optimization services that are designed to improve the visibility of your website and enhance its loading speed."
     },
     "custom": {
       "title": "Fully Customizable Apps",
-      "text": "We create fully customizable apps that look and feel great, are easy to use, and help your customers get what they need."
+      "text": " Our Fully Customizable Apps service offers clients the ability to have complete control over the design, functionality and user experience of their mobile applications."
     },
     "updates": {
       "title": "Regular Updates",
-      "text": "Hotcodes is a full-service web design and development company that works with small businesses, entrepreneurs, and professionals to help build their sites. We maintain your existing website, provide ongoing training on current website best practices, and update your site regularly."
+      "text": "We provide regular updates for all of its web and mobile app development services, ensuring that clients stay up to date with the latest technology and features."
     }
   },
   "about": {
@@ -44,29 +49,29 @@
     "aboutus": {
       "title": "Who we are",
       "text": {
-        "title": "Hotcodes is a group of developers, designers and marketers",
-        "body": "with the aim of conquering the largest international markets. We are passionate about the subject of technology and our goal is to create fast growing companies."
+        "title": "Our Story and Goal",
+        "body": "Hotcodes is a full-service IT company that provides a wide range of services including web development, mobile development, digital marketing, and high quality design. We are a team of experienced professionals dedicated to delivering top-notch solutions that meet our clients' unique needs and help them achieve their goals. Our goal is to provide our clients with the tools they need to succeed in today's digital landscape, and our commitment to excellence ensures that we consistently deliver high-quality results.."
       }
     },
     "mission": {
       "title": "Our mission",
       "text": {
-        "title": "Hotcodes is a service company and also a cradle of IT startups.",
-        "body": "We believe that the barriers that have prevented smaller investors from entering into the capital markets are quickly becoming obsolete. We envision a world where one can easily invest in unicorn companies, or participate in the initial public offerings of large corporations, with little to no personalized or financial risk."
+        "title": "Our Dedication to Excellence: Our Mission to Revolutionize the IT Industry",
+        "body": "Our mission at Hotcodes is to provide innovative and high-quality digital solutions to help businesses succeed in the ever-evolving digital landscape. Our goal is to help businesses grow by offering a wide range of services, including web development, mobile development, and digital marketing. We strive to deliver outstanding results that meet the unique needs of each of our clients and help them achieve their goals."
       }
     },
     "vision": {
       "title": "Our Vision",
       "text": {
-        "title": "We are a team of young men who share the same vision:",
-        "body": "We are a young, ambitious and dynamic team of men who got together to fulfil our respective dreams and visions. We share the same vision of revolutionizing Africa's market value and to create wealth for Africans by building an economically strong and prosperous Africa."
+        "title": "Shaping the Future of Technology",
+        "body": "At Hotcodes, our vision is to be a leading player in the global IT market. We strive to deliver innovative solutions that make a real difference in the lives of our clients. We are dedicated to the growth and development of Africa and believe that technology has the power to bring about positive change."
       }
     }
   },
   "team": {
     "title": "OUR TEAM",
     "subtitle": "Meet With Our Creative Dedicated Team",
-    "text": "We are a professional team of developers that are looking to build new and exciting applications. Our goal is to create an application that solves your problem, be it a website or an app. Our team will be able to provide you with all the resources you need to get started on your project so that your vision can be realized."
+    "text": "Our team is comprised of highly skilled and experienced professionals who are dedicated to providing the best possible solutions to our clients. Our developers, designers, and marketers use their expertise to create innovative and effective solutions that meet the unique needs of each project."
   },
   "portfolio": {
     "title": "Portfolio",

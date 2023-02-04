@@ -99,7 +99,7 @@ const Pricing = () => {
                   FCFA{" "}
                   <sup className="-a44 text-[34px] sm:text-[55px]">
                     {" "}
-                    80 0000{" "}
+                    180 0000{" "}
                   </sup>{" "}
                   /month
                 </h3>
@@ -158,7 +158,7 @@ const Pricing = () => {
                   FCFA{" "}
                   <sup className="-a44 text-[38px] sm:text-[55px]">
                     {" "}
-                    120 000{" "}
+                    250 000{" "}
                   </sup>
                   /month
                 </h3>
@@ -217,7 +217,7 @@ const Pricing = () => {
                   FCFA{" "}
                   <sup className="-a44 text-[38px] sm:text-[55px]">
                     {" "}
-                    170 000
+                    350 000
                   </sup>
                   /month
                 </h3>

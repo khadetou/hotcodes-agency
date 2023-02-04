@@ -1,5 +1,3 @@
-import React from "react";
-
 const Submenu = () => {
   return (
     <ul className="submenu dark:lg:border-transparent dark:lg:bg-[#2C3443]  hidden pt-5 transition-all duration-300 lg:invisible lg:absolute lg:top-[120%] lg:block lg:w-[350px] lg:rounded lg:border lg:bg-white lg:px-8 lg:pb-5 lg:text-left lg:opacity-0 lg:group-hover:visible group-hover:lg:top-full  group-hover:lg:opacity-100 ">

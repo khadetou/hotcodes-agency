@@ -68,7 +68,7 @@ const Portfolio: FC<PortfolioProps> = ({
         setNextCursor(updatedNextCursor);
       }
     })();
-  }, [activeFolder]);
+  }, [activeFolder, nextCursor]);
 
   const [filter, setFilter] = useState([]);
   const [activate, setActivate] = useState("all");
@@ -137,24 +137,25 @@ const Portfolio: FC<PortfolioProps> = ({
           />
           <ReactWOW animation="fadeInUp" delay="0.2s">
             <div className="a4 a2_ az">
-              <Link href="/show">
-                <a className="aD a9 aS a16 a1N[14px] aU aE aF aI hover:a19">
-                  {t("portfolio.button")}
-                  <span className="aK">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12.172 7L6.808 1.636L8.222 0.222L16 8L8.222 15.778L6.808 14.364L12.172 9H0V7H12.172Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </span>
-                </a>
+              <Link
+                href="/show"
+                className="aD a9 aS a16 a1N[14px] aU aE aF aI hover:a19"
+              >
+                {t("portfolio.button")}
+                <span className="aK">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.172 7L6.808 1.636L8.222 0.222L16 8L8.222 15.778L6.808 14.364L12.172 9H0V7H12.172Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
               </Link>
             </div>
           </ReactWOW>

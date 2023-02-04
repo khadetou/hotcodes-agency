@@ -1,6 +1,5 @@
 import React from "react";
 import ReactWOW from "react-wow";
-import Image from "next/image";
 
 const Blog = () => {
   return (

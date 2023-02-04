@@ -29,7 +29,7 @@ const Support = () => {
                   <div className="a5 a9">
                     <span className="a4d a4e a4 sm:block hidden ae[200px] a0 dark:an"></span>
                     <a className="aE text-base sm:text-xl a1t dark:text-white md:a1J lg:a2Z xl:a1J">
-                      <span>hotcodesagency@gmail.com</span>
+                      <span>contact@hotcodesagency.com</span>
                     </a>
                   </div>
                 </ReactWOW>
@@ -48,7 +48,7 @@ const Support = () => {
                         className="__cf_email__"
                         data-cfemail="ee9d9b9e9e819c9aae9d9a8f9c9a9b9ec08d8183"
                       >
-                        hotcodesagency@gmail.com
+                        contact@hotcodesagency.com
                       </a>
                     </p>
                   </div>
@@ -58,7 +58,7 @@ const Support = () => {
                     <h3 className="a44 aE aF a1t dark:text-white sm:a2Z">
                       {t("contactus.phone")}
                     </h3>
-                    <p className="aF a1K aG">+221 78 600 45 64</p>
+                    <p className="aF a1K aG">+221 77 586 79 68</p>
                   </div>
                 </div>
                 <div className="a4 a1v md:a1S/2 lg:a1S/4">
@@ -145,7 +145,9 @@ const Support = () => {
                       type="text"
                       name="name"
                       id="name"
-                      placeholder={t("contactus.form.nameplaceholder")}
+                      placeholder={
+                        t("contactus.form.nameplaceholder") as string
+                      }
                       className="a4 a1x at a2e aF a1K a1t a2P a27 focus:a28 dark:a1z[#2C3443] dark:text-white dark:focus:a2v"
                     />
                   </div>
@@ -162,7 +164,7 @@ const Support = () => {
                       type="email"
                       name="email"
                       id="email"
-                      placeholder={t("contactus.form.mail")}
+                      placeholder={t("contactus.form.mail") as string}
                       className="a4 a1x at a2e aF a1K a1t a2P a27 focus:a28 dark:a1z[#2C3443] dark:text-white dark:focus:a2v"
                     />
                   </div>
@@ -179,7 +181,9 @@ const Support = () => {
                       type="text"
                       name="phone"
                       id="phone"
-                      placeholder={t("contactus.form.phoneplaceholder")}
+                      placeholder={
+                        t("contactus.form.phoneplaceholder") as string
+                      }
                       className="a4 a1x at a2e aF a1K a1t a2P a27 focus:a28 dark:a1z[#2C3443] dark:text-white dark:focus:a2v"
                     />
                   </div>
@@ -196,7 +200,9 @@ const Support = () => {
                       type="text"
                       name="subject"
                       id="subject"
-                      placeholder={t("contactus.form.subjectplaceholder")}
+                      placeholder={
+                        t("contactus.form.subjectplaceholder") as string
+                      }
                       className="a4 a1x at a2e aF a1K a1t a2P a27 focus:a28 dark:a1z[#2C3443] dark:text-white dark:focus:a2v"
                     />
                   </div>
@@ -213,7 +219,9 @@ const Support = () => {
                       rows={4}
                       name="message"
                       id="message"
-                      placeholder={t("contactus.form.messageplaceholder")}
+                      placeholder={
+                        t("contactus.form.messageplaceholder") as string
+                      }
                       className="a4 a2Q a1x at a2e aF a1K a1t a2P a27 focus:a28 dark:a1z[#2C3443] dark:text-white dark:focus:a2v"
                     ></textarea>
                   </div>

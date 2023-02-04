@@ -12,24 +12,10 @@ const LangDropdown = () => {
     <div className="inline-flex items-stretch rounded-md group">
       <div className="px-2 py-2 text-sm flex justify-between">
         <span className={`w-[20px] ${locale === "fr" && "hidden"}`}>
-          <Image
-            src={Usa}
-            width="100%"
-            height="100%"
-            objectFit="contain"
-            layout="responsive"
-            alt="Usa flag"
-          />
+          <Image src={Usa} alt="Usa flag" />
         </span>
         <span className={`w-[20px] ${locale === "en" && "hidden"}`}>
-          <Image
-            src={Fr}
-            width="100%"
-            height="100%"
-            objectFit="contain"
-            layout="responsive"
-            alt="France flag"
-          />
+          <Image src={Fr} alt="France flag" />
         </span>
       </div>
 
@@ -59,14 +45,7 @@ const LangDropdown = () => {
             <Link href={pathname} locale="en">
               <div className="flex cursor-pointer px-2 py-2 text-gray font-lexend text-grag items-center hover:translate-x-2 transition-all ease-in-out duration-300 dark:hover:text-white hover:text-blue-color ">
                 <span className="w-[20px] mr-2">
-                  <Image
-                    src={Usa}
-                    width="100%"
-                    height="100%"
-                    objectFit="contain"
-                    layout="responsive"
-                    alt="Usa flag"
-                  />
+                  <Image src={Usa} alt="Usa flag" />
                 </span>
                 <span>En</span>
 
@@ -81,14 +60,7 @@ const LangDropdown = () => {
             <Link href={pathname} locale="fr">
               <div className="px-2 py-2 font-lexend text-gray text-gray-500 flex cursor-pointer rounded-lg items-center hover:translate-x-2 transition-all ease-in-out duration-300 dark:hover:text-white hover:text-blue-color ">
                 <span className="w-[20px] mr-2">
-                  <Image
-                    src={Fr}
-                    width="100%"
-                    height="100%"
-                    objectFit="contain"
-                    layout="responsive"
-                    alt="france flag"
-                  />
+                  <Image src={Fr} alt="france flag" />
                 </span>
                 <span>Fr</span>
                 <span className="w-3  ml-auto">

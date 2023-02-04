@@ -183,7 +183,7 @@ const Footer = () => {
                       className="__cf_email__"
                       data-cfemail="a8dbddd8d8c7dadce8ccc7c5c9c1c686cbc7c5"
                     >
-                      hotcodesagency@gmail.com
+                      contact@hotcodesagency.com
                     </span>
                   </a>
                 </div>
@@ -201,7 +201,7 @@ const Footer = () => {
                   type="email"
                   name="email"
                   id="email"
-                  placeholder={t("newsletter.email")}
+                  placeholder={t("newsletter.email") as string}
                   className="a24 a4 aS aT a17 a25 a26 aF aG a27 focus:border-blue-color
                    dark:border-transparent dark:bg-[#2C3443]"
                 />

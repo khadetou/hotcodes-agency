@@ -106,7 +106,7 @@ const Banner = () => {
               <div className="ac a3h a1B ah[560px] a4 ae[700px] lg:a3a">
                 <div className="a1 a2 a29 lg:a3i/12">
                   <Image
-                    src="/images/hero/image-2.jpg"
+                    src="/images/hero/image-4.jpg"
                     alt="hero-image"
                     width={560}
                     height={520}
@@ -114,7 +114,7 @@ const Banner = () => {
                 </div>
                 <div className="a1 a3 a10 a2w">
                   <Image
-                    src="/images/hero/image-1.jpg"
+                    src="/images/hero/image-3.jpg"
                     alt="hero-image"
                     width={350}
                     height={420}

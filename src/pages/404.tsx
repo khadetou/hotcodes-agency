@@ -24,10 +24,11 @@ const NotFound = () => {
                   The page you were looking for appears to have been moved,
                   deleted or does not exist.
                 </p>
-                <Link href="/">
-                  <a className="aD a9 am aS a16 a1N[14px] aU a1O a1G aI">
-                    Back to Home
-                  </a>
+                <Link
+                  href="/"
+                  className="aD a9 am aS a16 a1N[14px] aU a1O a1G aI"
+                >
+                  Back to Home
                 </Link>
               </div>
             </div>

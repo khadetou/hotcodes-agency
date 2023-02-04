@@ -80,17 +80,18 @@ const ShowCase: FC<ShowCaseProps> = ({
                     </p>
                   </div>
                   <div className="a3R sm:a25 lg:a3R xl:a25">
-                    <Link href={`/show/${ids}`}>
-                      <a className="dark:hover:us-bg-primary a5 a2o a2p a9 am a1j a_[#f8f8f8] a3S[15%] aI hover:a16 hover:a3r dark:hover:a3r">
-                        <svg
-                          width="20"
-                          height="20"
-                          viewBox="0 0 20 20"
-                          className="aL"
-                        >
-                          <path d="M13.4767 9.16689L9.00671 4.69689L10.185 3.51855L16.6667 10.0002L10.185 16.4819L9.00671 15.3036L13.4767 10.8336H3.33337V9.16689H13.4767Z" />
-                        </svg>
-                      </a>
+                    <Link
+                      href={`/show/${ids}`}
+                      className="dark:hover:us-bg-primary a5 a2o a2p a9 am a1j a_[#f8f8f8] a3S[15%] aI hover:a16 hover:a3r dark:hover:a3r"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        className="aL"
+                      >
+                        <path d="M13.4767 9.16689L9.00671 4.69689L10.185 3.51855L16.6667 10.0002L10.185 16.4819L9.00671 15.3036L13.4767 10.8336H3.33337V9.16689H13.4767Z" />
+                      </svg>
                     </Link>
                   </div>
                 </div>

@@ -100,7 +100,7 @@ const About = () => {
                     <div className="ac a3h a2O text-blue-color h-[490px] ae[600px] lg:a2g">
                       <div className="a1 a3 a2">
                         <Image
-                          src="/images/about/image-1.jpg"
+                          src="/images/about/image-4.jpg"
                           alt="about-image"
                           width={344}
                           height={484}
@@ -108,7 +108,7 @@ const About = () => {
                       </div>
                       <div className="a1 a29 a1a/2 a2w a1c/2">
                         <Image
-                          src="/images/about/image-2.jpg"
+                          src="/images/about/image-5.jpg"
                           alt="about-image"
                           width={318}
                           height={396}
@@ -243,7 +243,7 @@ const About = () => {
                       <div className="ac a3h a2O text-blue-color h-[490px] ae[600px] lg:a2g">
                         <div className="a1 a3 a2">
                           <Image
-                            src="/images/about/image-1.jpg"
+                            src="/images/about/image-6.jpg"
                             alt="about-image"
                             width={344}
                             height={484}
@@ -251,7 +251,7 @@ const About = () => {
                         </div>
                         <div className="a1 a29 a1a/2 a2w a1c/2">
                           <Image
-                            src="/images/about/image-2.jpg"
+                            src="/images/about/image-7.jpg"
                             alt="about-image"
                             width={318}
                             height={396}
